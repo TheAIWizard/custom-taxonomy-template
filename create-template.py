@@ -35,3 +35,5 @@ print(data_naf[["Sous-classe","Section","Division"]])
 
 # Forward fill NaN values in the 'Section' column
 #df['Section'] = df['Section'].ffill()
+
+data_naf.to_json("hierarchical_nace.json", orient ='index')
