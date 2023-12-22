@@ -36,8 +36,8 @@ data_naf = pd.merge(intitule_ape, intitule_section_division, on='Division', how=
 print(data_naf[["Sous-classe", "Section", "Division"]])
 
 # Forward fill NaN values in the 'Section' column
-#df['Section'] = df['Section'].ffill()
-#data_naf.to_json("hierarchical_nace.json", orient ='index')
+# df['Section'] = df['Section'].ffill()
+# data_naf.to_json("hierarchical_nace.json", orient ='index')
 
 """ Create XML label studio template """
 
@@ -55,13 +55,22 @@ text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de l
 text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité : $activ_nat_et", highlightColor="#0000ff")
 text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface : $activ_surf_et", highlightColor="#ffcc00")
 text_element = etree.SubElement(first_view, "Text", name="evt", value="Type d'évènement : $evenement_type", highlightColor="#00ff00")
+text_element = etree.SubElement(first_view, "Text", name="help_link", value="https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
+
+
+# Create the help View element
+# help_view = etree.SubElement(root, "View")#, style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
+# Create the Header element within the second View
+# header_second_element = etree.SubElement(first_view, "Header", name="Aide", value="Aide à la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
+# hypertext_second_element = etree.SubElement(header_second_element, "HyperText", name="Helper", inline="true")
+# link_element = etree.SubElement(hypertext_second_element, "a", href="https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles", target="_blank")
 
 # Create the second View element
 second_view = etree.SubElement(root, "View")#, style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
 
 # Create the Header element within the second View
 #header_second_element = etree.SubElement(second_view, "Header", value="Code APE correspondant")
-taxonomy_element = etree.SubElement(second_view, "Taxonomy", name="taxonomy", toName="text", minWidth="1000px", placeholder="Cliquez et tapez le code APE retenu", leafsOnly="true", maxUsages="1")
+taxonomy_element = etree.SubElement(second_view, "Taxonomy", name="taxonomy", toName="text", minWidth="200px", placeholder="Cliquez et tapez le code APE retenu", leafsOnly="true", maxUsages="1")
 
 # Iterate over each branch and write to XML
 for section, section_df in data_naf.groupby('Section'):
@@ -76,7 +85,7 @@ for section, section_df in data_naf.groupby('Section'):
     for division, division_df in section_df.groupby('Division'):
         division_label = division_df['Intitulé des divisions'].iloc[0]  # Assuming the label is the same for all rows in the division
         # Limit the string length to 70 characters and add "..." if it exceeds
-        division_label = (division_label[:47] + '...') if len(division_label) > 50 else division_label
+        division_label = (division_label[:57] + '...') if len(division_label) > 60 else division_label
         division_choice = etree.SubElement(section_choice, "Choice", value=f"{division} - {division_label}", alias=division)
         # Add style to each View element within the taxonomy
         #division_choice.set("style", "box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
