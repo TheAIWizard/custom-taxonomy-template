@@ -55,7 +55,7 @@ text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de l
 text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité : $activ_nat_et", highlightColor="#0000ff")
 text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface : $activ_surf_et", highlightColor="#ffcc00")
 text_element = etree.SubElement(first_view, "Text", name="evt", value="Type d'évènement : $evenement_type", highlightColor="#00ff00")
-text_element = etree.SubElement(first_view, "Text", name="help_link", value="https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
+text_element = etree.SubElement(first_view, "Text", name="help_link", value="Aide à la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
 
 
 # Create the help View element
@@ -70,13 +70,13 @@ second_view = etree.SubElement(root, "View")#, style="box-shadow: 2px 2px 5px #9
 
 # Create the Header element within the second View
 #header_second_element = etree.SubElement(second_view, "Header", value="Code APE correspondant")
-taxonomy_element = etree.SubElement(second_view, "Taxonomy", name="taxonomy", toName="text", minWidth="200px", placeholder="Cliquez et tapez le code APE retenu", leafsOnly="true", maxUsages="1")
+taxonomy_element = etree.SubElement(second_view, "Taxonomy", name="taxonomy", toName="text", minWidth="1200px", placeholder="Cliquez et tapez le code APE retenu", leafsOnly="true", maxUsages="1")
 
 # Iterate over each branch and write to XML
 for section, section_df in data_naf.groupby('Section'):
     section_label = section_df['Libellé des sections'].iloc[0]  # Assuming the label is the same for all rows in the section
     # Limit the string length to 70 characters and add "..." if it exceeds
-    section_label = (section_label[:47] + '...') if len(section_label) > 50 else section_label
+    # section_label = (section_label[:47] + '...') if len(section_label) > 50 else section_label
     
     section_choice = etree.SubElement(taxonomy_element, "Choice", value=f"{section} - {section_label}", alias=section)
     # Add style to each View element within the taxonomy
@@ -85,14 +85,14 @@ for section, section_df in data_naf.groupby('Section'):
     for division, division_df in section_df.groupby('Division'):
         division_label = division_df['Intitulé des divisions'].iloc[0]  # Assuming the label is the same for all rows in the division
         # Limit the string length to 70 characters and add "..." if it exceeds
-        division_label = (division_label[:57] + '...') if len(division_label) > 60 else division_label
+        # division_label = (division_label[:57] + '...') if len(division_label) > 60 else division_label
         division_choice = etree.SubElement(section_choice, "Choice", value=f"{division} - {division_label}", alias=division)
         # Add style to each View element within the taxonomy
         #division_choice.set("style", "box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
         
         for sous_classe, sous_classe_label in zip(division_df['Sous-classe'], division_df['Intitulé de la sous-classe']):
             # Limit the string length to 70 characters and add "..." if it exceeds
-            sous_classe_label = (sous_classe_label[:47] + '...') if len(sous_classe_label) > 50 else sous_classe_label
+            # sous_classe_label = (sous_classe_label[:47] + '...') if len(sous_classe_label) > 50 else sous_classe_label
             sous_classe_choice = etree.SubElement(division_choice, "Choice", value=f"{sous_classe} - {sous_classe_label}", alias=sous_classe)
             # Add style to each View element within the taxonomy
             #sous_classe_choice.set("style", "box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
