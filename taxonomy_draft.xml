@@ -1,20 +1,20 @@
 <View>
-  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
+  <View style="box-shadow: 2px 2px 3px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="D&#233;claration"/>
     <Text name="text" value="Libell&#233; d'activit&#233; : $activ_pr_lib_et" highlightColor="#ff0000"/>
     <Text name="c05" value="Type de liasse : $liasse_type" highlightColor="#ff9900"/>
     <Text name="nat" value="Nature d'activit&#233; : $activ_nat_et" highlightColor="#0000ff"/>
     <Text name="surf" value="Surface : $activ_surf_et" highlightColor="#ffcc00"/>
     <Text name="evt" value="Type d'&#233;v&#232;nement : $evenement_type" highlightColor="#00ff00"/>
-    <Text name="help_link" value="Aide &#224; la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles"/>
+    <Text name="help_link" value="https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles"/>
   </View>
   <View>
-    <Taxonomy name="taxonomy" toName="text" minWidth="1200px" placeholder="Cliquez et tapez le code APE retenu" leafsOnly="true" maxUsages="1">
+    <Taxonomy name="taxonomy" toName="text" minWidth="200px" placeholder="Cliquez et tapez le code APE retenu" leafsOnly="true" maxUsages="1">
       <Choice value="A - AGRICULTURE, SYLVICULTURE ET P&#202;CHE" alias="A">
         <Choice value="01 - Culture et production animale, chasse et services annexes" alias="01">
-          <Choice value="01.11Z - Culture de c&#233;r&#233;ales (&#224; l'exception du riz), de l&#233;gumineuses et de graines ol&#233;agineuses" alias="01.11Z"/>
+          <Choice value="01.11Z - Culture de c&#233;r&#233;ales (&#224; l'exception du riz), de ..." alias="01.11Z"/>
           <Choice value="01.12Z - Culture du riz" alias="01.12Z"/>
-          <Choice value="01.13Z - Culture de l&#233;gumes, de melons, de racines et de tubercules" alias="01.13Z"/>
+          <Choice value="01.13Z - Culture de l&#233;gumes, de melons, de racines et de..." alias="01.13Z"/>
           <Choice value="01.14Z - Culture de la canne &#224; sucre" alias="01.14Z"/>
           <Choice value="01.15Z - Culture du tabac" alias="01.15Z"/>
           <Choice value="01.16Z - Culture de plantes &#224; fibres" alias="01.16Z"/>
@@ -23,10 +23,10 @@
           <Choice value="01.22Z - Culture de fruits tropicaux et subtropicaux" alias="01.22Z"/>
           <Choice value="01.23Z - Culture d'agrumes" alias="01.23Z"/>
           <Choice value="01.24Z - Culture de fruits &#224; p&#233;pins et &#224; noyau" alias="01.24Z"/>
-          <Choice value="01.25Z - Culture d'autres fruits d'arbres ou d'arbustes et de fruits &#224; coque" alias="01.25Z"/>
+          <Choice value="01.25Z - Culture d'autres fruits d'arbres ou d'arbustes ..." alias="01.25Z"/>
           <Choice value="01.26Z - Culture de fruits ol&#233;agineux" alias="01.26Z"/>
           <Choice value="01.27Z - Culture de plantes &#224; boissons" alias="01.27Z"/>
-          <Choice value="01.28Z - Culture de plantes &#224; &#233;pices, aromatiques, m&#233;dicinales et pharmaceutiques" alias="01.28Z"/>
+          <Choice value="01.28Z - Culture de plantes &#224; &#233;pices, aromatiques, m&#233;dic..." alias="01.28Z"/>
           <Choice value="01.29Z - Autres cultures permanentes" alias="01.29Z"/>
           <Choice value="01.30Z - Reproduction de plantes" alias="01.30Z"/>
           <Choice value="01.41Z - &#201;levage de vaches laiti&#232;res" alias="01.41Z"/>
@@ -47,7 +47,7 @@
         <Choice value="02 - Sylviculture et exploitation foresti&#232;re" alias="02">
           <Choice value="02.10Z - Sylviculture et autres activit&#233;s foresti&#232;res" alias="02.10Z"/>
           <Choice value="02.20Z - Exploitation foresti&#232;re" alias="02.20Z"/>
-          <Choice value="02.30Z - R&#233;colte de produits forestiers non ligneux poussant &#224; l'&#233;tat sauvage" alias="02.30Z"/>
+          <Choice value="02.30Z - R&#233;colte de produits forestiers non ligneux pous..." alias="02.30Z"/>
           <Choice value="02.40Z - Services de soutien &#224; l'exploitation foresti&#232;re" alias="02.40Z"/>
         </Choice>
         <Choice value="03 - P&#234;che et aquaculture" alias="03">
@@ -72,32 +72,32 @@
           <Choice value="07.29Z - Extraction d'autres minerais de m&#233;taux non ferreux" alias="07.29Z"/>
         </Choice>
         <Choice value="08 - Autres industries extractives" alias="08">
-          <Choice value="08.11Z - Extraction de pierres ornementales et de construction, de calcaire industriel, de gypse, de craie et d'ardoise" alias="08.11Z"/>
-          <Choice value="08.12Z - Exploitation de gravi&#232;res et sabli&#232;res, extraction d'argiles et de kaolin" alias="08.12Z"/>
-          <Choice value="08.91Z - Extraction des min&#233;raux chimiques et d'engrais min&#233;raux" alias="08.91Z"/>
+          <Choice value="08.11Z - Extraction de pierres ornementales et de constr..." alias="08.11Z"/>
+          <Choice value="08.12Z - Exploitation de gravi&#232;res et sabli&#232;res, extract..." alias="08.12Z"/>
+          <Choice value="08.91Z - Extraction des min&#233;raux chimiques et d'engrais ..." alias="08.91Z"/>
           <Choice value="08.92Z - Extraction de tourbe" alias="08.92Z"/>
           <Choice value="08.93Z - Production de sel" alias="08.93Z"/>
           <Choice value="08.99Z - Autres activit&#233;s extractives n.c.a." alias="08.99Z"/>
         </Choice>
         <Choice value="09 - Services de soutien aux industries extractives" alias="09">
-          <Choice value="09.10Z - Activit&#233;s de soutien &#224; l'extraction d'hydrocarbures" alias="09.10Z"/>
-          <Choice value="09.90Z - Activit&#233;s de soutien aux autres industries extractives" alias="09.90Z"/>
+          <Choice value="09.10Z - Activit&#233;s de soutien &#224; l'extraction d'hydrocarb..." alias="09.10Z"/>
+          <Choice value="09.90Z - Activit&#233;s de soutien aux autres industries extr..." alias="09.90Z"/>
         </Choice>
       </Choice>
       <Choice value="C - INDUSTRIE MANUFACTURI&#200;RE" alias="C">
         <Choice value="10 - Industries alimentaires" alias="10">
-          <Choice value="10.11Z - Transformation et conservation de la viande de boucherie" alias="10.11Z"/>
-          <Choice value="10.12Z - Transformation et conservation de la viande de volaille" alias="10.12Z"/>
-          <Choice value="10.13A - Pr&#233;paration industrielle de produits &#224; base de viande" alias="10.13A"/>
+          <Choice value="10.11Z - Transformation et conservation de la viande de ..." alias="10.11Z"/>
+          <Choice value="10.12Z - Transformation et conservation de la viande de ..." alias="10.12Z"/>
+          <Choice value="10.13A - Pr&#233;paration industrielle de produits &#224; base de ..." alias="10.13A"/>
           <Choice value="10.13B - Charcuterie" alias="10.13B"/>
-          <Choice value="10.20Z - Transformation et conservation de poisson, de crustac&#233;s et de mollusques" alias="10.20Z"/>
+          <Choice value="10.20Z - Transformation et conservation de poisson, de c..." alias="10.20Z"/>
           <Choice value="10.31Z - Transformation et conservation de pommes de terre" alias="10.31Z"/>
           <Choice value="10.32Z - Pr&#233;paration de jus de fruits et l&#233;gumes" alias="10.32Z"/>
           <Choice value="10.39A - Autre transformation et conservation de l&#233;gumes" alias="10.39A"/>
           <Choice value="10.39B - Transformation et conservation de fruits" alias="10.39B"/>
           <Choice value="10.41A - Fabrication d'huiles et graisses brutes" alias="10.41A"/>
           <Choice value="10.41B - Fabrication d'huiles et graisses raffin&#233;es" alias="10.41B"/>
-          <Choice value="10.42Z - Fabrication de margarine et graisses comestibles similaires" alias="10.42Z"/>
+          <Choice value="10.42Z - Fabrication de margarine et graisses comestible..." alias="10.42Z"/>
           <Choice value="10.51A - Fabrication de lait liquide et de produits frais" alias="10.51A"/>
           <Choice value="10.51B - Fabrication de beurre" alias="10.51B"/>
           <Choice value="10.51C - Fabrication de fromage" alias="10.51C"/>
@@ -106,14 +106,14 @@
           <Choice value="10.61A - Meunerie" alias="10.61A"/>
           <Choice value="10.61B - Autres activit&#233;s du travail des grains" alias="10.61B"/>
           <Choice value="10.62Z - Fabrication de produits amylac&#233;s" alias="10.62Z"/>
-          <Choice value="10.71A - Fabrication industrielle de pain et de p&#226;tisserie fra&#238;che" alias="10.71A"/>
+          <Choice value="10.71A - Fabrication industrielle de pain et de p&#226;tisser..." alias="10.71A"/>
           <Choice value="10.71B - Cuisson de produits de boulangerie" alias="10.71B"/>
           <Choice value="10.71C - Boulangerie et boulangerie-p&#226;tisserie" alias="10.71C"/>
           <Choice value="10.71D - P&#226;tisserie" alias="10.71D"/>
-          <Choice value="10.72Z - Fabrication de biscuits, biscottes et p&#226;tisseries de conservation" alias="10.72Z"/>
+          <Choice value="10.72Z - Fabrication de biscuits, biscottes et p&#226;tisseri..." alias="10.72Z"/>
           <Choice value="10.73Z - Fabrication de p&#226;tes alimentaires" alias="10.73Z"/>
           <Choice value="10.81Z - Fabrication de sucre" alias="10.81Z"/>
-          <Choice value="10.82Z - Fabrication de cacao, chocolat et de produits de confiserie" alias="10.82Z"/>
+          <Choice value="10.82Z - Fabrication de cacao, chocolat et de produits d..." alias="10.82Z"/>
           <Choice value="10.83Z - Transformation du th&#233; et du caf&#233;" alias="10.83Z"/>
           <Choice value="10.84Z - Fabrication de condiments et assaisonnements" alias="10.84Z"/>
           <Choice value="10.85Z - Fabrication de plats pr&#233;par&#233;s" alias="10.85Z"/>
@@ -127,7 +127,7 @@
           <Choice value="11.02A - Fabrication de vins effervescents" alias="11.02A"/>
           <Choice value="11.02B - Vinification" alias="11.02B"/>
           <Choice value="11.03Z - Fabrication de cidre et de vins de fruits" alias="11.03Z"/>
-          <Choice value="11.04Z - Production d'autres boissons ferment&#233;es non distill&#233;es" alias="11.04Z"/>
+          <Choice value="11.04Z - Production d'autres boissons ferment&#233;es non dis..." alias="11.04Z"/>
           <Choice value="11.05Z - Fabrication de bi&#232;re" alias="11.05Z"/>
           <Choice value="11.06Z - Fabrication de malt" alias="11.06Z"/>
           <Choice value="11.07A - Industrie des eaux de table" alias="11.07A"/>
@@ -145,7 +145,7 @@
           <Choice value="13.93Z - Fabrication de tapis et moquettes" alias="13.93Z"/>
           <Choice value="13.94Z - Fabrication de ficelles, cordes et filets" alias="13.94Z"/>
           <Choice value="13.95Z - Fabrication de non-tiss&#233;s, sauf habillement" alias="13.95Z"/>
-          <Choice value="13.96Z - Fabrication d'autres textiles techniques et industriels" alias="13.96Z"/>
+          <Choice value="13.96Z - Fabrication d'autres textiles techniques et ind..." alias="13.96Z"/>
           <Choice value="13.99Z - Fabrication d'autres textiles n.c.a." alias="13.99Z"/>
         </Choice>
         <Choice value="14 - Industrie de l'habillement" alias="14">
@@ -159,18 +159,18 @@
           <Choice value="14.39Z - Fabrication d'autres articles &#224; mailles" alias="14.39Z"/>
         </Choice>
         <Choice value="15 - Industrie du cuir et de la chaussure" alias="15">
-          <Choice value="15.11Z - Appr&#234;t et tannage des cuirs ; pr&#233;paration et teinture des fourrures" alias="15.11Z"/>
-          <Choice value="15.12Z - Fabrication d'articles de voyage, de maroquinerie et de sellerie" alias="15.12Z"/>
+          <Choice value="15.11Z - Appr&#234;t et tannage des cuirs ; pr&#233;paration et te..." alias="15.11Z"/>
+          <Choice value="15.12Z - Fabrication d'articles de voyage, de maroquiner..." alias="15.12Z"/>
           <Choice value="15.20Z - Fabrication de chaussures" alias="15.20Z"/>
         </Choice>
-        <Choice value="16 - Travail du bois et fabrication d'articles en bois et en li&#232;ge, &#224; l'exception des meubles ; fabrication d'articles en vannerie et sparterie" alias="16">
+        <Choice value="16 - Travail du bois et fabrication d'articles en bois et en l..." alias="16">
           <Choice value="16.10A - Sciage et rabotage du bois, hors impr&#233;gnation" alias="16.10A"/>
           <Choice value="16.10B - Impr&#233;gnation du bois" alias="16.10B"/>
           <Choice value="16.21Z - Fabrication de placage et de panneaux de bois" alias="16.21Z"/>
           <Choice value="16.22Z - Fabrication de parquets assembl&#233;s" alias="16.22Z"/>
           <Choice value="16.23Z - Fabrication de charpentes et d'autres menuiseries" alias="16.23Z"/>
           <Choice value="16.24Z - Fabrication d'emballages en bois" alias="16.24Z"/>
-          <Choice value="16.29Z - Fabrication d'objets divers en bois ; fabrication d'objets en li&#232;ge, vannerie et sparterie" alias="16.29Z"/>
+          <Choice value="16.29Z - Fabrication d'objets divers en bois ; fabricati..." alias="16.29Z"/>
         </Choice>
         <Choice value="17 - Industrie du papier et du carton" alias="17">
           <Choice value="17.11Z - Fabrication de p&#226;te &#224; papier" alias="17.11Z"/>
@@ -178,10 +178,10 @@
           <Choice value="17.21A - Fabrication de carton ondul&#233;" alias="17.21A"/>
           <Choice value="17.21B - Fabrication de cartonnages" alias="17.21B"/>
           <Choice value="17.21C - Fabrication d'emballages en papier" alias="17.21C"/>
-          <Choice value="17.22Z - Fabrication d'articles en papier &#224; usage sanitaire ou domestique" alias="17.22Z"/>
+          <Choice value="17.22Z - Fabrication d'articles en papier &#224; usage sanita..." alias="17.22Z"/>
           <Choice value="17.23Z - Fabrication d'articles de papeterie" alias="17.23Z"/>
           <Choice value="17.24Z - Fabrication de papiers peints" alias="17.24Z"/>
-          <Choice value="17.29Z - Fabrication d'autres articles en papier ou en carton" alias="17.29Z"/>
+          <Choice value="17.29Z - Fabrication d'autres articles en papier ou en c..." alias="17.29Z"/>
         </Choice>
         <Choice value="18 - Imprimerie et reproduction d'enregistrements" alias="18">
           <Choice value="18.11Z - Imprimerie de journaux" alias="18.11Z"/>
@@ -197,21 +197,21 @@
         <Choice value="20 - Industrie chimique" alias="20">
           <Choice value="20.11Z - Fabrication de gaz industriels" alias="20.11Z"/>
           <Choice value="20.12Z - Fabrication de colorants et de pigments" alias="20.12Z"/>
-          <Choice value="20.13A - Enrichissement et retraitement de mati&#232;res nucl&#233;aires" alias="20.13A"/>
-          <Choice value="20.13B - Fabrication d'autres produits chimiques inorganiques de base n.c.a." alias="20.13B"/>
-          <Choice value="20.14Z - Fabrication d'autres produits chimiques organiques de base" alias="20.14Z"/>
+          <Choice value="20.13A - Enrichissement et retraitement de mati&#232;res nucl..." alias="20.13A"/>
+          <Choice value="20.13B - Fabrication d'autres produits chimiques inorgan..." alias="20.13B"/>
+          <Choice value="20.14Z - Fabrication d'autres produits chimiques organiq..." alias="20.14Z"/>
           <Choice value="20.15Z - Fabrication de produits azot&#233;s et d'engrais" alias="20.15Z"/>
           <Choice value="20.16Z - Fabrication de mati&#232;res plastiques de base" alias="20.16Z"/>
           <Choice value="20.17Z - Fabrication de caoutchouc synth&#233;tique" alias="20.17Z"/>
-          <Choice value="20.20Z - Fabrication de pesticides et d'autres produits agrochimiques" alias="20.20Z"/>
-          <Choice value="20.30Z - Fabrication de peintures, vernis, encres et mastics" alias="20.30Z"/>
-          <Choice value="20.41Z - Fabrication de savons, d&#233;tergents et produits d'entretien" alias="20.41Z"/>
-          <Choice value="20.42Z - Fabrication de parfums et de produits pour la toilette" alias="20.42Z"/>
+          <Choice value="20.20Z - Fabrication de pesticides et d'autres produits ..." alias="20.20Z"/>
+          <Choice value="20.30Z - Fabrication de peintures, vernis, encres et mas..." alias="20.30Z"/>
+          <Choice value="20.41Z - Fabrication de savons, d&#233;tergents et produits d..." alias="20.41Z"/>
+          <Choice value="20.42Z - Fabrication de parfums et de produits pour la t..." alias="20.42Z"/>
           <Choice value="20.51Z - Fabrication de produits explosifs" alias="20.51Z"/>
           <Choice value="20.52Z - Fabrication de colles" alias="20.52Z"/>
           <Choice value="20.53Z - Fabrication d'huiles essentielles" alias="20.53Z"/>
           <Choice value="20.59Z - Fabrication d'autres produits chimiques n.c.a." alias="20.59Z"/>
-          <Choice value="20.60Z - Fabrication de fibres artificielles ou synth&#233;tiques" alias="20.60Z"/>
+          <Choice value="20.60Z - Fabrication de fibres artificielles ou synth&#233;ti..." alias="20.60Z"/>
         </Choice>
         <Choice value="21 - Industrie pharmaceutique" alias="21">
           <Choice value="21.10Z - Fabrication de produits pharmaceutiques de base" alias="21.10Z"/>
@@ -220,41 +220,41 @@
         <Choice value="22 - Fabrication de produits en caoutchouc et en plastique" alias="22">
           <Choice value="22.11Z - Fabrication et rechapage de pneumatiques" alias="22.11Z"/>
           <Choice value="22.19Z - Fabrication d'autres articles en caoutchouc" alias="22.19Z"/>
-          <Choice value="22.21Z - Fabrication de plaques, feuilles, tubes et profil&#233;s en mati&#232;res plastiques" alias="22.21Z"/>
+          <Choice value="22.21Z - Fabrication de plaques, feuilles, tubes et prof..." alias="22.21Z"/>
           <Choice value="22.22Z - Fabrication d'emballages en mati&#232;res plastiques" alias="22.22Z"/>
-          <Choice value="22.23Z - Fabrication d'&#233;l&#233;ments en mati&#232;res plastiques pour la construction" alias="22.23Z"/>
-          <Choice value="22.29A - Fabrication de pi&#232;ces techniques &#224; base de mati&#232;res plastiques" alias="22.29A"/>
-          <Choice value="22.29B - Fabrication de produits de consommation courante en mati&#232;res plastiques" alias="22.29B"/>
+          <Choice value="22.23Z - Fabrication d'&#233;l&#233;ments en mati&#232;res plastiques p..." alias="22.23Z"/>
+          <Choice value="22.29A - Fabrication de pi&#232;ces techniques &#224; base de mati..." alias="22.29A"/>
+          <Choice value="22.29B - Fabrication de produits de consommation courant..." alias="22.29B"/>
         </Choice>
         <Choice value="23 - Fabrication d'autres produits min&#233;raux non m&#233;talliques" alias="23">
           <Choice value="23.11Z - Fabrication de verre plat" alias="23.11Z"/>
           <Choice value="23.12Z - Fa&#231;onnage et transformation du verre plat" alias="23.12Z"/>
           <Choice value="23.13Z - Fabrication de verre creux" alias="23.13Z"/>
           <Choice value="23.14Z - Fabrication de fibres de verre" alias="23.14Z"/>
-          <Choice value="23.19Z - Fabrication et fa&#231;onnage d'autres articles en verre, y compris verre technique" alias="23.19Z"/>
+          <Choice value="23.19Z - Fabrication et fa&#231;onnage d'autres articles en v..." alias="23.19Z"/>
           <Choice value="23.20Z - Fabrication de produits r&#233;fractaires" alias="23.20Z"/>
           <Choice value="23.31Z - Fabrication de carreaux en c&#233;ramique" alias="23.31Z"/>
-          <Choice value="23.32Z - Fabrication de briques, tuiles et produits de construction, en terre cuite" alias="23.32Z"/>
-          <Choice value="23.41Z - Fabrication d'articles c&#233;ramiques &#224; usage domestique ou ornemental" alias="23.41Z"/>
+          <Choice value="23.32Z - Fabrication de briques, tuiles et produits de c..." alias="23.32Z"/>
+          <Choice value="23.41Z - Fabrication d'articles c&#233;ramiques &#224; usage domes..." alias="23.41Z"/>
           <Choice value="23.42Z - Fabrication d'appareils sanitaires en c&#233;ramique" alias="23.42Z"/>
-          <Choice value="23.43Z - Fabrication d'isolateurs et pi&#232;ces isolantes en c&#233;ramique" alias="23.43Z"/>
-          <Choice value="23.44Z - Fabrication d'autres produits c&#233;ramiques &#224; usage technique" alias="23.44Z"/>
+          <Choice value="23.43Z - Fabrication d'isolateurs et pi&#232;ces isolantes en..." alias="23.43Z"/>
+          <Choice value="23.44Z - Fabrication d'autres produits c&#233;ramiques &#224; usag..." alias="23.44Z"/>
           <Choice value="23.49Z - Fabrication d'autres produits c&#233;ramiques" alias="23.49Z"/>
           <Choice value="23.51Z - Fabrication de ciment" alias="23.51Z"/>
           <Choice value="23.52Z - Fabrication de chaux et pl&#226;tre" alias="23.52Z"/>
-          <Choice value="23.61Z - Fabrication d'&#233;l&#233;ments en b&#233;ton pour la construction" alias="23.61Z"/>
-          <Choice value="23.62Z - Fabrication d'&#233;l&#233;ments en pl&#226;tre pour la construction" alias="23.62Z"/>
+          <Choice value="23.61Z - Fabrication d'&#233;l&#233;ments en b&#233;ton pour la constru..." alias="23.61Z"/>
+          <Choice value="23.62Z - Fabrication d'&#233;l&#233;ments en pl&#226;tre pour la constr..." alias="23.62Z"/>
           <Choice value="23.63Z - Fabrication de b&#233;ton pr&#234;t &#224; l'emploi" alias="23.63Z"/>
           <Choice value="23.64Z - Fabrication de mortiers et b&#233;tons secs" alias="23.64Z"/>
           <Choice value="23.65Z - Fabrication d'ouvrages en fibre-ciment" alias="23.65Z"/>
-          <Choice value="23.69Z - Fabrication d'autres ouvrages en b&#233;ton, en ciment ou en pl&#226;tre" alias="23.69Z"/>
+          <Choice value="23.69Z - Fabrication d'autres ouvrages en b&#233;ton, en cime..." alias="23.69Z"/>
           <Choice value="23.70Z - Taille, fa&#231;onnage et finissage de pierres" alias="23.70Z"/>
           <Choice value="23.91Z - Fabrication de produits abrasifs" alias="23.91Z"/>
-          <Choice value="23.99Z - Fabrication d'autres produits min&#233;raux non m&#233;talliques n.c.a." alias="23.99Z"/>
+          <Choice value="23.99Z - Fabrication d'autres produits min&#233;raux non m&#233;ta..." alias="23.99Z"/>
         </Choice>
         <Choice value="24 - M&#233;tallurgie" alias="24">
           <Choice value="24.10Z - Sid&#233;rurgie" alias="24.10Z"/>
-          <Choice value="24.20Z - Fabrication de tubes, tuyaux, profil&#233;s creux et accessoires correspondants en acier" alias="24.20Z"/>
+          <Choice value="24.20Z - Fabrication de tubes, tuyaux, profil&#233;s creux et..." alias="24.20Z"/>
           <Choice value="24.31Z - &#201;tirage &#224; froid de barres" alias="24.31Z"/>
           <Choice value="24.32Z - Laminage &#224; froid de feuillards" alias="24.32Z"/>
           <Choice value="24.33Z - Profilage &#224; froid par formage ou pliage" alias="24.33Z"/>
@@ -264,20 +264,20 @@
           <Choice value="24.43Z - M&#233;tallurgie du plomb, du zinc ou de l'&#233;tain" alias="24.43Z"/>
           <Choice value="24.44Z - M&#233;tallurgie du cuivre" alias="24.44Z"/>
           <Choice value="24.45Z - M&#233;tallurgie des autres m&#233;taux non ferreux" alias="24.45Z"/>
-          <Choice value="24.46Z - &#201;laboration et transformation de mati&#232;res nucl&#233;aires" alias="24.46Z"/>
+          <Choice value="24.46Z - &#201;laboration et transformation de mati&#232;res nucl&#233;..." alias="24.46Z"/>
           <Choice value="24.51Z - Fonderie de fonte" alias="24.51Z"/>
           <Choice value="24.52Z - Fonderie d'acier" alias="24.52Z"/>
           <Choice value="24.53Z - Fonderie de m&#233;taux l&#233;gers" alias="24.53Z"/>
           <Choice value="24.54Z - Fonderie d'autres m&#233;taux non ferreux" alias="24.54Z"/>
         </Choice>
-        <Choice value="25 - Fabrication de produits m&#233;talliques, &#224; l'exception des machines et des &#233;quipements" alias="25">
-          <Choice value="25.11Z - Fabrication de structures m&#233;talliques et de parties de structures" alias="25.11Z"/>
+        <Choice value="25 - Fabrication de produits m&#233;talliques, &#224; l'exception des ma..." alias="25">
+          <Choice value="25.11Z - Fabrication de structures m&#233;talliques et de par..." alias="25.11Z"/>
           <Choice value="25.12Z - Fabrication de portes et fen&#234;tres en m&#233;tal" alias="25.12Z"/>
-          <Choice value="25.21Z - Fabrication de radiateurs et de chaudi&#232;res pour le chauffage central" alias="25.21Z"/>
-          <Choice value="25.29Z - Fabrication d'autres r&#233;servoirs, citernes et conteneurs m&#233;talliques" alias="25.29Z"/>
-          <Choice value="25.30Z - Fabrication de g&#233;n&#233;rateurs de vapeur, &#224; l'exception des chaudi&#232;res pour le chauffage central" alias="25.30Z"/>
+          <Choice value="25.21Z - Fabrication de radiateurs et de chaudi&#232;res pour..." alias="25.21Z"/>
+          <Choice value="25.29Z - Fabrication d'autres r&#233;servoirs, citernes et co..." alias="25.29Z"/>
+          <Choice value="25.30Z - Fabrication de g&#233;n&#233;rateurs de vapeur, &#224; l'excep..." alias="25.30Z"/>
           <Choice value="25.40Z - Fabrication d'armes et de munitions" alias="25.40Z"/>
-          <Choice value="25.50A - Forge, estampage, matri&#231;age ; m&#233;tallurgie des poudres" alias="25.50A"/>
+          <Choice value="25.50A - Forge, estampage, matri&#231;age ; m&#233;tallurgie des p..." alias="25.50A"/>
           <Choice value="25.50B - D&#233;coupage, emboutissage" alias="25.50B"/>
           <Choice value="25.61Z - Traitement et rev&#234;tement des m&#233;taux" alias="25.61Z"/>
           <Choice value="25.62A - D&#233;colletage" alias="25.62A"/>
@@ -286,32 +286,32 @@
           <Choice value="25.72Z - Fabrication de serrures et de ferrures" alias="25.72Z"/>
           <Choice value="25.73A - Fabrication de moules et mod&#232;les" alias="25.73A"/>
           <Choice value="25.73B - Fabrication d'autres outillages" alias="25.73B"/>
-          <Choice value="25.91Z - Fabrication de f&#251;ts et emballages m&#233;talliques similaires" alias="25.91Z"/>
+          <Choice value="25.91Z - Fabrication de f&#251;ts et emballages m&#233;talliques s..." alias="25.91Z"/>
           <Choice value="25.92Z - Fabrication d'emballages m&#233;talliques l&#233;gers" alias="25.92Z"/>
-          <Choice value="25.93Z - Fabrication d'articles en fils m&#233;talliques, de cha&#238;nes et de ressorts" alias="25.93Z"/>
+          <Choice value="25.93Z - Fabrication d'articles en fils m&#233;talliques, de ..." alias="25.93Z"/>
           <Choice value="25.94Z - Fabrication de vis et de boulons" alias="25.94Z"/>
           <Choice value="25.99A - Fabrication d'articles m&#233;talliques m&#233;nagers" alias="25.99A"/>
           <Choice value="25.99B - Fabrication d'autres articles m&#233;talliques" alias="25.99B"/>
         </Choice>
-        <Choice value="26 - Fabrication de produits informatiques, &#233;lectroniques et optiques" alias="26">
+        <Choice value="26 - Fabrication de produits informatiques, &#233;lectroniques et o..." alias="26">
           <Choice value="26.11Z - Fabrication de composants &#233;lectroniques" alias="26.11Z"/>
           <Choice value="26.12Z - Fabrication de cartes &#233;lectroniques assembl&#233;es" alias="26.12Z"/>
-          <Choice value="26.20Z - Fabrication d'ordinateurs et d'&#233;quipements p&#233;riph&#233;riques" alias="26.20Z"/>
+          <Choice value="26.20Z - Fabrication d'ordinateurs et d'&#233;quipements p&#233;ri..." alias="26.20Z"/>
           <Choice value="26.30Z - Fabrication d'&#233;quipements de communication" alias="26.30Z"/>
           <Choice value="26.40Z - Fabrication de produits &#233;lectroniques grand public" alias="26.40Z"/>
           <Choice value="26.51A - Fabrication d'&#233;quipements d'aide &#224; la navigation" alias="26.51A"/>
-          <Choice value="26.51B - Fabrication d'instrumentation scientifique et technique" alias="26.51B"/>
+          <Choice value="26.51B - Fabrication d'instrumentation scientifique et t..." alias="26.51B"/>
           <Choice value="26.52Z - Horlogerie" alias="26.52Z"/>
-          <Choice value="26.60Z - Fabrication d'&#233;quipements d'irradiation m&#233;dicale, d'&#233;quipements &#233;lectrom&#233;dicaux et &#233;lectroth&#233;rapeutiques" alias="26.60Z"/>
+          <Choice value="26.60Z - Fabrication d'&#233;quipements d'irradiation m&#233;dical..." alias="26.60Z"/>
           <Choice value="26.70Z - Fabrication de mat&#233;riels optique et photographique" alias="26.70Z"/>
           <Choice value="26.80Z - Fabrication de supports magn&#233;tiques et optiques" alias="26.80Z"/>
         </Choice>
         <Choice value="27 - Fabrication d'&#233;quipements &#233;lectriques" alias="27">
-          <Choice value="27.11Z - Fabrication de moteurs, g&#233;n&#233;ratrices et transformateurs &#233;lectriques" alias="27.11Z"/>
-          <Choice value="27.12Z - Fabrication de mat&#233;riel de distribution et de commande &#233;lectrique" alias="27.12Z"/>
-          <Choice value="27.20Z - Fabrication de piles et d'accumulateurs &#233;lectriques" alias="27.20Z"/>
+          <Choice value="27.11Z - Fabrication de moteurs, g&#233;n&#233;ratrices et transfo..." alias="27.11Z"/>
+          <Choice value="27.12Z - Fabrication de mat&#233;riel de distribution et de c..." alias="27.12Z"/>
+          <Choice value="27.20Z - Fabrication de piles et d'accumulateurs &#233;lectri..." alias="27.20Z"/>
           <Choice value="27.31Z - Fabrication de c&#226;bles de fibres optiques" alias="27.31Z"/>
-          <Choice value="27.32Z - Fabrication d'autres fils et c&#226;bles &#233;lectroniques ou &#233;lectriques" alias="27.32Z"/>
+          <Choice value="27.32Z - Fabrication d'autres fils et c&#226;bles &#233;lectroniqu..." alias="27.32Z"/>
           <Choice value="27.33Z - Fabrication de mat&#233;riel d'installation &#233;lectrique" alias="27.33Z"/>
           <Choice value="27.40Z - Fabrication d'appareils d'&#233;clairage &#233;lectrique" alias="27.40Z"/>
           <Choice value="27.51Z - Fabrication d'appareils &#233;lectrom&#233;nagers" alias="27.51Z"/>
@@ -319,61 +319,61 @@
           <Choice value="27.90Z - Fabrication d'autres mat&#233;riels &#233;lectriques" alias="27.90Z"/>
         </Choice>
         <Choice value="28 - Fabrication de machines et &#233;quipements n.c.a." alias="28">
-          <Choice value="28.11Z - Fabrication de moteurs et turbines, &#224; l'exception des moteurs d'avions et de v&#233;hicules" alias="28.11Z"/>
-          <Choice value="28.12Z - Fabrication d'&#233;quipements hydrauliques et pneumatiques" alias="28.12Z"/>
+          <Choice value="28.11Z - Fabrication de moteurs et turbines, &#224; l'excepti..." alias="28.11Z"/>
+          <Choice value="28.12Z - Fabrication d'&#233;quipements hydrauliques et pneum..." alias="28.12Z"/>
           <Choice value="28.13Z - Fabrication d'autres pompes et compresseurs" alias="28.13Z"/>
           <Choice value="28.14Z - Fabrication d'autres articles de robinetterie" alias="28.14Z"/>
-          <Choice value="28.15Z - Fabrication d'engrenages et d'organes m&#233;caniques de transmission" alias="28.15Z"/>
+          <Choice value="28.15Z - Fabrication d'engrenages et d'organes m&#233;canique..." alias="28.15Z"/>
           <Choice value="28.21Z - Fabrication de fours et br&#251;leurs" alias="28.21Z"/>
-          <Choice value="28.22Z - Fabrication de mat&#233;riel de levage et de manutention" alias="28.22Z"/>
-          <Choice value="28.23Z - Fabrication de machines et d'&#233;quipements de bureau (&#224; l'exception des ordinateurs et &#233;quipements p&#233;riph&#233;riques)" alias="28.23Z"/>
-          <Choice value="28.24Z - Fabrication d'outillage portatif &#224; moteur incorpor&#233;" alias="28.24Z"/>
-          <Choice value="28.25Z - Fabrication d'&#233;quipements a&#233;rauliques et frigorifiques industriels" alias="28.25Z"/>
-          <Choice value="28.29A - Fabrication d'&#233;quipements d'emballage, de conditionnement et de pesage" alias="28.29A"/>
+          <Choice value="28.22Z - Fabrication de mat&#233;riel de levage et de manuten..." alias="28.22Z"/>
+          <Choice value="28.23Z - Fabrication de machines et d'&#233;quipements de bur..." alias="28.23Z"/>
+          <Choice value="28.24Z - Fabrication d'outillage portatif &#224; moteur incor..." alias="28.24Z"/>
+          <Choice value="28.25Z - Fabrication d'&#233;quipements a&#233;rauliques et frigor..." alias="28.25Z"/>
+          <Choice value="28.29A - Fabrication d'&#233;quipements d'emballage, de condi..." alias="28.29A"/>
           <Choice value="28.29B - Fabrication d'autres machines d'usage g&#233;n&#233;ral" alias="28.29B"/>
           <Choice value="28.30Z - Fabrication de machines agricoles et foresti&#232;res" alias="28.30Z"/>
-          <Choice value="28.41Z - Fabrication de machines-outils pour le travail des m&#233;taux" alias="28.41Z"/>
+          <Choice value="28.41Z - Fabrication de machines-outils pour le travail ..." alias="28.41Z"/>
           <Choice value="28.49Z - Fabrication d'autres machines-outils" alias="28.49Z"/>
           <Choice value="28.91Z - Fabrication de machines pour la m&#233;tallurgie" alias="28.91Z"/>
-          <Choice value="28.92Z - Fabrication de machines pour l'extraction ou la construction" alias="28.92Z"/>
-          <Choice value="28.93Z - Fabrication de machines pour l'industrie agro-alimentaire" alias="28.93Z"/>
-          <Choice value="28.94Z - Fabrication de machines pour les industries textiles" alias="28.94Z"/>
-          <Choice value="28.95Z - Fabrication de machines pour les industries du papier et du carton" alias="28.95Z"/>
-          <Choice value="28.96Z - Fabrication de machines pour le travail du caoutchouc ou des plastiques" alias="28.96Z"/>
+          <Choice value="28.92Z - Fabrication de machines pour l'extraction ou la..." alias="28.92Z"/>
+          <Choice value="28.93Z - Fabrication de machines pour l'industrie agro-a..." alias="28.93Z"/>
+          <Choice value="28.94Z - Fabrication de machines pour les industries tex..." alias="28.94Z"/>
+          <Choice value="28.95Z - Fabrication de machines pour les industries du ..." alias="28.95Z"/>
+          <Choice value="28.96Z - Fabrication de machines pour le travail du caou..." alias="28.96Z"/>
           <Choice value="28.99A - Fabrication de machines d'imprimerie" alias="28.99A"/>
           <Choice value="28.99B - Fabrication d'autres machines sp&#233;cialis&#233;es" alias="28.99B"/>
         </Choice>
         <Choice value="29 - Industrie automobile" alias="29">
           <Choice value="29.10Z - Construction de v&#233;hicules automobiles" alias="29.10Z"/>
           <Choice value="29.20Z - Fabrication de carrosseries et remorques" alias="29.20Z"/>
-          <Choice value="29.31Z - Fabrication d'&#233;quipements &#233;lectriques et &#233;lectroniques automobiles" alias="29.31Z"/>
+          <Choice value="29.31Z - Fabrication d'&#233;quipements &#233;lectriques et &#233;lectr..." alias="29.31Z"/>
           <Choice value="29.32Z - Fabrication d'autres &#233;quipements automobiles" alias="29.32Z"/>
         </Choice>
         <Choice value="30 - Fabrication d'autres mat&#233;riels de transport" alias="30">
-          <Choice value="30.11Z - Construction de navires et de structures flottantes" alias="30.11Z"/>
+          <Choice value="30.11Z - Construction de navires et de structures flotta..." alias="30.11Z"/>
           <Choice value="30.12Z - Construction de bateaux de plaisance" alias="30.12Z"/>
-          <Choice value="30.20Z - Construction de locomotives et d'autre mat&#233;riel ferroviaire roulant" alias="30.20Z"/>
+          <Choice value="30.20Z - Construction de locomotives et d'autre mat&#233;riel..." alias="30.20Z"/>
           <Choice value="30.30Z - Construction a&#233;ronautique et spatiale" alias="30.30Z"/>
           <Choice value="30.40Z - Construction de v&#233;hicules militaires de combat" alias="30.40Z"/>
           <Choice value="30.91Z - Fabrication de motocycles" alias="30.91Z"/>
-          <Choice value="30.92Z - Fabrication de bicyclettes et de v&#233;hicules pour invalides" alias="30.92Z"/>
-          <Choice value="30.99Z - Fabrication d'autres &#233;quipements de transport n.c.a." alias="30.99Z"/>
+          <Choice value="30.92Z - Fabrication de bicyclettes et de v&#233;hicules pour..." alias="30.92Z"/>
+          <Choice value="30.99Z - Fabrication d'autres &#233;quipements de transport n..." alias="30.99Z"/>
         </Choice>
         <Choice value="31 - Fabrication de meubles" alias="31">
           <Choice value="31.01Z - Fabrication de meubles de bureau et de magasin" alias="31.01Z"/>
           <Choice value="31.02Z - Fabrication de meubles de cuisine" alias="31.02Z"/>
           <Choice value="31.03Z - Fabrication de matelas" alias="31.03Z"/>
           <Choice value="31.09A - Fabrication de si&#232;ges d'ameublement d'int&#233;rieur" alias="31.09A"/>
-          <Choice value="31.09B - Fabrication d'autres meubles et industries connexes de l'ameublement" alias="31.09B"/>
+          <Choice value="31.09B - Fabrication d'autres meubles et industries conn..." alias="31.09B"/>
         </Choice>
         <Choice value="32 - Autres industries manufacturi&#232;res" alias="32">
           <Choice value="32.11Z - Frappe de monnaie" alias="32.11Z"/>
           <Choice value="32.12Z - Fabrication d'articles de joaillerie et bijouterie" alias="32.12Z"/>
-          <Choice value="32.13Z - Fabrication d'articles de bijouterie fantaisie et articles similaires" alias="32.13Z"/>
+          <Choice value="32.13Z - Fabrication d'articles de bijouterie fantaisie ..." alias="32.13Z"/>
           <Choice value="32.20Z - Fabrication d'instruments de musique" alias="32.20Z"/>
           <Choice value="32.30Z - Fabrication d'articles de sport" alias="32.30Z"/>
           <Choice value="32.40Z - Fabrication de jeux et jouets" alias="32.40Z"/>
-          <Choice value="32.50A - Fabrication de mat&#233;riel m&#233;dico-chirurgical et dentaire" alias="32.50A"/>
+          <Choice value="32.50A - Fabrication de mat&#233;riel m&#233;dico-chirurgical et d..." alias="32.50A"/>
           <Choice value="32.50B - Fabrication de lunettes" alias="32.50B"/>
           <Choice value="32.91Z - Fabrication d'articles de brosserie" alias="32.91Z"/>
           <Choice value="32.99Z - Autres activit&#233;s manufacturi&#232;res n.c.a." alias="32.99Z"/>
@@ -384,17 +384,17 @@
           <Choice value="33.13Z - R&#233;paration de mat&#233;riels &#233;lectroniques et optiques" alias="33.13Z"/>
           <Choice value="33.14Z - R&#233;paration d'&#233;quipements &#233;lectriques" alias="33.14Z"/>
           <Choice value="33.15Z - R&#233;paration et maintenance navale" alias="33.15Z"/>
-          <Choice value="33.16Z - R&#233;paration et maintenance d'a&#233;ronefs et d'engins spatiaux" alias="33.16Z"/>
-          <Choice value="33.17Z - R&#233;paration et maintenance d'autres &#233;quipements de transport" alias="33.17Z"/>
+          <Choice value="33.16Z - R&#233;paration et maintenance d'a&#233;ronefs et d'engin..." alias="33.16Z"/>
+          <Choice value="33.17Z - R&#233;paration et maintenance d'autres &#233;quipements ..." alias="33.17Z"/>
           <Choice value="33.19Z - R&#233;paration d'autres &#233;quipements" alias="33.19Z"/>
-          <Choice value="33.20A - Installation de structures m&#233;talliques, chaudronn&#233;es et de tuyauterie" alias="33.20A"/>
+          <Choice value="33.20A - Installation de structures m&#233;talliques, chaudro..." alias="33.20A"/>
           <Choice value="33.20B - Installation de machines et &#233;quipements m&#233;caniques" alias="33.20B"/>
-          <Choice value="33.20C - Conception d'ensemble et assemblage sur site industriel d'&#233;quipements de contr&#244;le des processus industriels" alias="33.20C"/>
-          <Choice value="33.20D - Installation d'&#233;quipements &#233;lectriques, de mat&#233;riels &#233;lectroniques et optiques ou d'autres mat&#233;riels" alias="33.20D"/>
+          <Choice value="33.20C - Conception d'ensemble et assemblage sur site in..." alias="33.20C"/>
+          <Choice value="33.20D - Installation d'&#233;quipements &#233;lectriques, de mat&#233;..." alias="33.20D"/>
         </Choice>
       </Choice>
-      <Choice value="D - PRODUCTION ET DISTRIBUTION D'&#201;LECTRICIT&#201;, DE GAZ, DE VAPEUR ET D'AIR CONDITIONN&#201;" alias="D">
-        <Choice value="35 - Production et distribution d'&#233;lectricit&#233;, de gaz, de vapeur et d'air conditionn&#233;" alias="35">
+      <Choice value="D - PRODUCTION ET DISTRIBUTION D'&#201;LECTRICIT&#201;, DE GA..." alias="D">
+        <Choice value="35 - Production et distribution d'&#233;lectricit&#233;, de gaz, de vape..." alias="35">
           <Choice value="35.11Z - Production d'&#233;lectricit&#233;" alias="35.11Z"/>
           <Choice value="35.12Z - Transport d'&#233;lectricit&#233;" alias="35.12Z"/>
           <Choice value="35.13Z - Distribution d'&#233;lectricit&#233;" alias="35.13Z"/>
@@ -402,26 +402,26 @@
           <Choice value="35.21Z - Production de combustibles gazeux" alias="35.21Z"/>
           <Choice value="35.22Z - Distribution de combustibles gazeux par conduites" alias="35.22Z"/>
           <Choice value="35.23Z - Commerce de combustibles gazeux par conduites" alias="35.23Z"/>
-          <Choice value="35.30Z - Production et distribution de vapeur et d'air conditionn&#233;" alias="35.30Z"/>
+          <Choice value="35.30Z - Production et distribution de vapeur et d'air c..." alias="35.30Z"/>
         </Choice>
       </Choice>
-      <Choice value="E - PRODUCTION ET DISTRIBUTION D'EAU ; ASSAINISSEMENT, GESTION DES D&#201;CHETS ET D&#201;POLLUTION" alias="E">
+      <Choice value="E - PRODUCTION ET DISTRIBUTION D'EAU ; ASSAINISSEME..." alias="E">
         <Choice value="36 - Captage, traitement et distribution d'eau" alias="36">
           <Choice value="36.00Z - Captage, traitement et distribution d'eau" alias="36.00Z"/>
         </Choice>
         <Choice value="37 - Collecte et traitement des eaux us&#233;es" alias="37">
           <Choice value="37.00Z - Collecte et traitement des eaux us&#233;es" alias="37.00Z"/>
         </Choice>
-        <Choice value="38 - Collecte, traitement et &#233;limination des d&#233;chets ; r&#233;cup&#233;ration" alias="38">
+        <Choice value="38 - Collecte, traitement et &#233;limination des d&#233;chets ; r&#233;cup&#233;r..." alias="38">
           <Choice value="38.11Z - Collecte des d&#233;chets non dangereux" alias="38.11Z"/>
           <Choice value="38.12Z - Collecte des d&#233;chets dangereux" alias="38.12Z"/>
-          <Choice value="38.21Z - Traitement et &#233;limination des d&#233;chets non dangereux" alias="38.21Z"/>
+          <Choice value="38.21Z - Traitement et &#233;limination des d&#233;chets non dange..." alias="38.21Z"/>
           <Choice value="38.22Z - Traitement et &#233;limination des d&#233;chets dangereux" alias="38.22Z"/>
           <Choice value="38.31Z - D&#233;mant&#232;lement d'&#233;paves" alias="38.31Z"/>
           <Choice value="38.32Z - R&#233;cup&#233;ration de d&#233;chets tri&#233;s" alias="38.32Z"/>
         </Choice>
         <Choice value="39 - D&#233;pollution et autres services de gestion des d&#233;chets" alias="39">
-          <Choice value="39.00Z - D&#233;pollution et autres services de gestion des d&#233;chets" alias="39.00Z"/>
+          <Choice value="39.00Z - D&#233;pollution et autres services de gestion des d..." alias="39.00Z"/>
         </Choice>
       </Choice>
       <Choice value="F - CONSTRUCTION" alias="F">
@@ -435,23 +435,23 @@
         </Choice>
         <Choice value="42 - G&#233;nie civil" alias="42">
           <Choice value="42.11Z - Construction de routes et autoroutes" alias="42.11Z"/>
-          <Choice value="42.12Z - Construction de voies ferr&#233;es de surface et souterraines" alias="42.12Z"/>
+          <Choice value="42.12Z - Construction de voies ferr&#233;es de surface et sou..." alias="42.12Z"/>
           <Choice value="42.13A - Construction d'ouvrages d'art" alias="42.13A"/>
           <Choice value="42.13B - Construction et entretien de tunnels" alias="42.13B"/>
           <Choice value="42.21Z - Construction de r&#233;seaux pour fluides" alias="42.21Z"/>
-          <Choice value="42.22Z - Construction de r&#233;seaux &#233;lectriques et de t&#233;l&#233;communications" alias="42.22Z"/>
+          <Choice value="42.22Z - Construction de r&#233;seaux &#233;lectriques et de t&#233;l&#233;c..." alias="42.22Z"/>
           <Choice value="42.91Z - Construction d'ouvrages maritimes et fluviaux" alias="42.91Z"/>
-          <Choice value="42.99Z - Construction d'autres ouvrages de g&#233;nie civil n.c.a." alias="42.99Z"/>
+          <Choice value="42.99Z - Construction d'autres ouvrages de g&#233;nie civil n..." alias="42.99Z"/>
         </Choice>
         <Choice value="43 - Travaux de construction sp&#233;cialis&#233;s" alias="43">
           <Choice value="43.11Z - Travaux de d&#233;molition" alias="43.11Z"/>
-          <Choice value="43.12A - Travaux de terrassement courants et travaux pr&#233;paratoires" alias="43.12A"/>
-          <Choice value="43.12B - Travaux de terrassement sp&#233;cialis&#233;s ou de grande masse" alias="43.12B"/>
+          <Choice value="43.12A - Travaux de terrassement courants et travaux pr&#233;..." alias="43.12A"/>
+          <Choice value="43.12B - Travaux de terrassement sp&#233;cialis&#233;s ou de grand..." alias="43.12B"/>
           <Choice value="43.13Z - Forages et sondages" alias="43.13Z"/>
           <Choice value="43.21A - Travaux d'installation &#233;lectrique dans tous locaux" alias="43.21A"/>
-          <Choice value="43.21B - Travaux d'installation &#233;lectrique sur la voie publique" alias="43.21B"/>
-          <Choice value="43.22A - Travaux d'installation d'eau et de gaz en tous locaux" alias="43.22A"/>
-          <Choice value="43.22B - Travaux d'installation d'&#233;quipements thermiques et de climatisation" alias="43.22B"/>
+          <Choice value="43.21B - Travaux d'installation &#233;lectrique sur la voie p..." alias="43.21B"/>
+          <Choice value="43.22A - Travaux d'installation d'eau et de gaz en tous ..." alias="43.22A"/>
+          <Choice value="43.22B - Travaux d'installation d'&#233;quipements thermiques..." alias="43.22B"/>
           <Choice value="43.29A - Travaux d'isolation" alias="43.29A"/>
           <Choice value="43.29B - Autres travaux d'installation n.c.a." alias="43.29B"/>
           <Choice value="43.31Z - Travaux de pl&#226;trerie" alias="43.31Z"/>
@@ -465,83 +465,83 @@
           <Choice value="43.91B - Travaux de couverture par &#233;l&#233;ments" alias="43.91B"/>
           <Choice value="43.99A - Travaux d'&#233;tanch&#233;ification" alias="43.99A"/>
           <Choice value="43.99B - Travaux de montage de structures m&#233;talliques" alias="43.99B"/>
-          <Choice value="43.99C - Travaux de ma&#231;onnerie g&#233;n&#233;rale et gros &#339;uvre de b&#226;timent" alias="43.99C"/>
+          <Choice value="43.99C - Travaux de ma&#231;onnerie g&#233;n&#233;rale et gros &#339;uvre de..." alias="43.99C"/>
           <Choice value="43.99D - Autres travaux sp&#233;cialis&#233;s de construction" alias="43.99D"/>
-          <Choice value="43.99E - Location avec op&#233;rateur de mat&#233;riel de construction" alias="43.99E"/>
+          <Choice value="43.99E - Location avec op&#233;rateur de mat&#233;riel de construc..." alias="43.99E"/>
         </Choice>
       </Choice>
-      <Choice value="G - COMMERCE; R&#201;PARATION D'AUTOMOBILES ET DE MOTOCYCLES" alias="G">
+      <Choice value="G - COMMERCE; R&#201;PARATION D'AUTOMOBILES ET DE MOTOCY..." alias="G">
         <Choice value="45 - Commerce et r&#233;paration d'automobiles et de motocycles" alias="45">
-          <Choice value="45.11Z - Commerce de voitures et de v&#233;hicules automobiles l&#233;gers" alias="45.11Z"/>
+          <Choice value="45.11Z - Commerce de voitures et de v&#233;hicules automobile..." alias="45.11Z"/>
           <Choice value="45.19Z - Commerce d'autres v&#233;hicules automobiles" alias="45.19Z"/>
-          <Choice value="45.20A - Entretien et r&#233;paration de v&#233;hicules automobiles l&#233;gers" alias="45.20A"/>
-          <Choice value="45.20B - Entretien et r&#233;paration d'autres v&#233;hicules automobiles" alias="45.20B"/>
+          <Choice value="45.20A - Entretien et r&#233;paration de v&#233;hicules automobile..." alias="45.20A"/>
+          <Choice value="45.20B - Entretien et r&#233;paration d'autres v&#233;hicules auto..." alias="45.20B"/>
           <Choice value="45.31Z - Commerce de gros d'&#233;quipements automobiles" alias="45.31Z"/>
           <Choice value="45.32Z - Commerce de d&#233;tail d'&#233;quipements automobiles" alias="45.32Z"/>
           <Choice value="45.40Z - Commerce et r&#233;paration de motocycles" alias="45.40Z"/>
         </Choice>
-        <Choice value="46 - Commerce de gros, &#224; l'exception des automobiles et des motocycles" alias="46">
-          <Choice value="46.11Z - Interm&#233;diaires du commerce en mati&#232;res premi&#232;res agricoles, animaux vivants, mati&#232;res premi&#232;res textiles et produits semi-finis" alias="46.11Z"/>
+        <Choice value="46 - Commerce de gros, &#224; l'exception des automobiles et des mo..." alias="46">
+          <Choice value="46.11Z - Interm&#233;diaires du commerce en mati&#232;res premi&#232;re..." alias="46.11Z"/>
           <Choice value="46.12A - Centrales d'achat de carburant" alias="46.12A"/>
-          <Choice value="46.12B - Autres interm&#233;diaires du commerce en combustibles, m&#233;taux, min&#233;raux et produits chimiques" alias="46.12B"/>
-          <Choice value="46.13Z - Interm&#233;diaires du commerce en bois et mat&#233;riaux de construction" alias="46.13Z"/>
-          <Choice value="46.14Z - Interm&#233;diaires du commerce en machines, &#233;quipements industriels, navires et avions" alias="46.14Z"/>
-          <Choice value="46.15Z - Interm&#233;diaires du commerce en meubles, articles de m&#233;nage et quincaillerie" alias="46.15Z"/>
-          <Choice value="46.16Z - Interm&#233;diaires du commerce en textiles, habillement, fourrures, chaussures et articles en cuir" alias="46.16Z"/>
+          <Choice value="46.12B - Autres interm&#233;diaires du commerce en combustibl..." alias="46.12B"/>
+          <Choice value="46.13Z - Interm&#233;diaires du commerce en bois et mat&#233;riaux..." alias="46.13Z"/>
+          <Choice value="46.14Z - Interm&#233;diaires du commerce en machines, &#233;quipem..." alias="46.14Z"/>
+          <Choice value="46.15Z - Interm&#233;diaires du commerce en meubles, articles..." alias="46.15Z"/>
+          <Choice value="46.16Z - Interm&#233;diaires du commerce en textiles, habille..." alias="46.16Z"/>
           <Choice value="46.17A - Centrales d'achat alimentaires" alias="46.17A"/>
-          <Choice value="46.17B - Autres interm&#233;diaires du commerce en denr&#233;es, boissons et tabac" alias="46.17B"/>
-          <Choice value="46.18Z - Interm&#233;diaires sp&#233;cialis&#233;s dans le commerce d'autres produits sp&#233;cifiques" alias="46.18Z"/>
+          <Choice value="46.17B - Autres interm&#233;diaires du commerce en denr&#233;es, b..." alias="46.17B"/>
+          <Choice value="46.18Z - Interm&#233;diaires sp&#233;cialis&#233;s dans le commerce d'a..." alias="46.18Z"/>
           <Choice value="46.19A - Centrales d'achat non alimentaires" alias="46.19A"/>
-          <Choice value="46.19B - Autres interm&#233;diaires du commerce en produits divers" alias="46.19B"/>
-          <Choice value="46.21Z - Commerce de gros (commerce interentreprises) de c&#233;r&#233;ales, de tabac non manufactur&#233;, de semences et d'aliments pour le b&#233;tail" alias="46.21Z"/>
-          <Choice value="46.22Z - Commerce de gros (commerce interentreprises) de fleurs et plantes" alias="46.22Z"/>
-          <Choice value="46.23Z - Commerce de gros (commerce interentreprises) d'animaux vivants" alias="46.23Z"/>
-          <Choice value="46.24Z - Commerce de gros (commerce interentreprises) de cuirs et peaux" alias="46.24Z"/>
-          <Choice value="46.31Z - Commerce de gros (commerce interentreprises) de fruits et l&#233;gumes" alias="46.31Z"/>
-          <Choice value="46.32A - Commerce de gros (commerce interentreprises) de viandes de boucherie" alias="46.32A"/>
-          <Choice value="46.32B - Commerce de gros (commerce interentreprises) de produits &#224; base de viande" alias="46.32B"/>
-          <Choice value="46.32C - Commerce de gros (commerce interentreprises) de volailles et gibier" alias="46.32C"/>
-          <Choice value="46.33Z - Commerce de gros (commerce interentreprises) de produits laitiers, &#339;ufs, huiles et mati&#232;res grasses comestibles" alias="46.33Z"/>
-          <Choice value="46.34Z - Commerce de gros (commerce interentreprises) de boissons" alias="46.34Z"/>
-          <Choice value="46.35Z - Commerce de gros (commerce interentreprises) de produits &#224; base de tabac" alias="46.35Z"/>
-          <Choice value="46.36Z - Commerce de gros (commerce interentreprises) de sucre, chocolat et confiserie" alias="46.36Z"/>
-          <Choice value="46.37Z - Commerce de gros (commerce interentreprises) de caf&#233;, th&#233;, cacao et &#233;pices" alias="46.37Z"/>
-          <Choice value="46.38A - Commerce de gros (commerce interentreprises) de poissons, crustac&#233;s et mollusques" alias="46.38A"/>
-          <Choice value="46.38B - Commerce de gros (commerce interentreprises) alimentaire sp&#233;cialis&#233; divers" alias="46.38B"/>
-          <Choice value="46.39A - Commerce de gros (commerce interentreprises) de produits surgel&#233;s" alias="46.39A"/>
-          <Choice value="46.39B - Commerce de gros (commerce interentreprises) alimentaire non sp&#233;cialis&#233;" alias="46.39B"/>
-          <Choice value="46.41Z - Commerce de gros (commerce interentreprises) de textiles" alias="46.41Z"/>
-          <Choice value="46.42Z - Commerce de gros (commerce interentreprises) d'habillement et de chaussures" alias="46.42Z"/>
-          <Choice value="46.43Z - Commerce de gros (commerce interentreprises) d'appareils &#233;lectrom&#233;nagers" alias="46.43Z"/>
-          <Choice value="46.44Z - Commerce de gros (commerce interentreprises) de vaisselle, verrerie et produits d'entretien" alias="46.44Z"/>
-          <Choice value="46.45Z - Commerce de gros (commerce interentreprises) de parfumerie et de produits de beaut&#233;" alias="46.45Z"/>
-          <Choice value="46.46Z - Commerce de gros (commerce interentreprises) de produits pharmaceutiques" alias="46.46Z"/>
-          <Choice value="46.47Z - Commerce de gros (commerce interentreprises) de meubles, de tapis et d'appareils d'&#233;clairage" alias="46.47Z"/>
-          <Choice value="46.48Z - Commerce de gros (commerce interentreprises) d'articles d'horlogerie et de bijouterie" alias="46.48Z"/>
-          <Choice value="46.49Z - Commerce de gros (commerce interentreprises) d'autres biens domestiques" alias="46.49Z"/>
-          <Choice value="46.51Z - Commerce de gros (commerce interentreprises) d'ordinateurs, d'&#233;quipements informatiques p&#233;riph&#233;riques et de logiciels" alias="46.51Z"/>
-          <Choice value="46.52Z - Commerce de gros (commerce interentreprises) de composants et d'&#233;quipements &#233;lectroniques et de t&#233;l&#233;communication" alias="46.52Z"/>
-          <Choice value="46.61Z - Commerce de gros (commerce interentreprises) de mat&#233;riel agricole" alias="46.61Z"/>
-          <Choice value="46.62Z - Commerce de gros (commerce interentreprises) de machines-outils" alias="46.62Z"/>
-          <Choice value="46.63Z - Commerce de gros (commerce interentreprises) de machines pour l'extraction, la construction et le g&#233;nie civil" alias="46.63Z"/>
-          <Choice value="46.64Z - Commerce de gros (commerce interentreprises) de machines pour l'industrie textile et l'habillement" alias="46.64Z"/>
-          <Choice value="46.65Z - Commerce de gros (commerce interentreprises) de mobilier de bureau" alias="46.65Z"/>
-          <Choice value="46.66Z - Commerce de gros (commerce interentreprises) d'autres machines et &#233;quipements de bureau" alias="46.66Z"/>
-          <Choice value="46.69A - Commerce de gros (commerce interentreprises) de mat&#233;riel &#233;lectrique" alias="46.69A"/>
-          <Choice value="46.69B - Commerce de gros (commerce interentreprises) de fournitures et &#233;quipements industriels divers" alias="46.69B"/>
-          <Choice value="46.69C - Commerce de gros (commerce interentreprises) de fournitures et &#233;quipements divers pour le commerce et les services" alias="46.69C"/>
-          <Choice value="46.71Z - Commerce de gros (commerce interentreprises) de combustibles et de produits annexes" alias="46.71Z"/>
-          <Choice value="46.72Z - Commerce de gros (commerce interentreprises) de minerais et m&#233;taux" alias="46.72Z"/>
-          <Choice value="46.73A - Commerce de gros (commerce interentreprises) de bois et de mat&#233;riaux de construction" alias="46.73A"/>
-          <Choice value="46.73B - Commerce de gros (commerce interentreprises) d'appareils sanitaires et de produits de d&#233;coration" alias="46.73B"/>
-          <Choice value="46.74A - Commerce de gros (commerce interentreprises) de quincaillerie" alias="46.74A"/>
-          <Choice value="46.74B - Commerce de gros (commerce interentreprises) de fournitures pour la plomberie et le chauffage" alias="46.74B"/>
-          <Choice value="46.75Z - Commerce de gros (commerce interentreprises) de produits chimiques" alias="46.75Z"/>
-          <Choice value="46.76Z - Commerce de gros (commerce interentreprises) d'autres produits interm&#233;diaires" alias="46.76Z"/>
-          <Choice value="46.77Z - Commerce de gros (commerce interentreprises) de d&#233;chets et d&#233;bris" alias="46.77Z"/>
-          <Choice value="46.90Z - Commerce de gros (commerce interentreprises) non sp&#233;cialis&#233;" alias="46.90Z"/>
+          <Choice value="46.19B - Autres interm&#233;diaires du commerce en produits d..." alias="46.19B"/>
+          <Choice value="46.21Z - Commerce de gros (commerce interentreprises) de..." alias="46.21Z"/>
+          <Choice value="46.22Z - Commerce de gros (commerce interentreprises) de..." alias="46.22Z"/>
+          <Choice value="46.23Z - Commerce de gros (commerce interentreprises) d'..." alias="46.23Z"/>
+          <Choice value="46.24Z - Commerce de gros (commerce interentreprises) de..." alias="46.24Z"/>
+          <Choice value="46.31Z - Commerce de gros (commerce interentreprises) de..." alias="46.31Z"/>
+          <Choice value="46.32A - Commerce de gros (commerce interentreprises) de..." alias="46.32A"/>
+          <Choice value="46.32B - Commerce de gros (commerce interentreprises) de..." alias="46.32B"/>
+          <Choice value="46.32C - Commerce de gros (commerce interentreprises) de..." alias="46.32C"/>
+          <Choice value="46.33Z - Commerce de gros (commerce interentreprises) de..." alias="46.33Z"/>
+          <Choice value="46.34Z - Commerce de gros (commerce interentreprises) de..." alias="46.34Z"/>
+          <Choice value="46.35Z - Commerce de gros (commerce interentreprises) de..." alias="46.35Z"/>
+          <Choice value="46.36Z - Commerce de gros (commerce interentreprises) de..." alias="46.36Z"/>
+          <Choice value="46.37Z - Commerce de gros (commerce interentreprises) de..." alias="46.37Z"/>
+          <Choice value="46.38A - Commerce de gros (commerce interentreprises) de..." alias="46.38A"/>
+          <Choice value="46.38B - Commerce de gros (commerce interentreprises) al..." alias="46.38B"/>
+          <Choice value="46.39A - Commerce de gros (commerce interentreprises) de..." alias="46.39A"/>
+          <Choice value="46.39B - Commerce de gros (commerce interentreprises) al..." alias="46.39B"/>
+          <Choice value="46.41Z - Commerce de gros (commerce interentreprises) de..." alias="46.41Z"/>
+          <Choice value="46.42Z - Commerce de gros (commerce interentreprises) d'..." alias="46.42Z"/>
+          <Choice value="46.43Z - Commerce de gros (commerce interentreprises) d'..." alias="46.43Z"/>
+          <Choice value="46.44Z - Commerce de gros (commerce interentreprises) de..." alias="46.44Z"/>
+          <Choice value="46.45Z - Commerce de gros (commerce interentreprises) de..." alias="46.45Z"/>
+          <Choice value="46.46Z - Commerce de gros (commerce interentreprises) de..." alias="46.46Z"/>
+          <Choice value="46.47Z - Commerce de gros (commerce interentreprises) de..." alias="46.47Z"/>
+          <Choice value="46.48Z - Commerce de gros (commerce interentreprises) d'..." alias="46.48Z"/>
+          <Choice value="46.49Z - Commerce de gros (commerce interentreprises) d'..." alias="46.49Z"/>
+          <Choice value="46.51Z - Commerce de gros (commerce interentreprises) d'..." alias="46.51Z"/>
+          <Choice value="46.52Z - Commerce de gros (commerce interentreprises) de..." alias="46.52Z"/>
+          <Choice value="46.61Z - Commerce de gros (commerce interentreprises) de..." alias="46.61Z"/>
+          <Choice value="46.62Z - Commerce de gros (commerce interentreprises) de..." alias="46.62Z"/>
+          <Choice value="46.63Z - Commerce de gros (commerce interentreprises) de..." alias="46.63Z"/>
+          <Choice value="46.64Z - Commerce de gros (commerce interentreprises) de..." alias="46.64Z"/>
+          <Choice value="46.65Z - Commerce de gros (commerce interentreprises) de..." alias="46.65Z"/>
+          <Choice value="46.66Z - Commerce de gros (commerce interentreprises) d'..." alias="46.66Z"/>
+          <Choice value="46.69A - Commerce de gros (commerce interentreprises) de..." alias="46.69A"/>
+          <Choice value="46.69B - Commerce de gros (commerce interentreprises) de..." alias="46.69B"/>
+          <Choice value="46.69C - Commerce de gros (commerce interentreprises) de..." alias="46.69C"/>
+          <Choice value="46.71Z - Commerce de gros (commerce interentreprises) de..." alias="46.71Z"/>
+          <Choice value="46.72Z - Commerce de gros (commerce interentreprises) de..." alias="46.72Z"/>
+          <Choice value="46.73A - Commerce de gros (commerce interentreprises) de..." alias="46.73A"/>
+          <Choice value="46.73B - Commerce de gros (commerce interentreprises) d'..." alias="46.73B"/>
+          <Choice value="46.74A - Commerce de gros (commerce interentreprises) de..." alias="46.74A"/>
+          <Choice value="46.74B - Commerce de gros (commerce interentreprises) de..." alias="46.74B"/>
+          <Choice value="46.75Z - Commerce de gros (commerce interentreprises) de..." alias="46.75Z"/>
+          <Choice value="46.76Z - Commerce de gros (commerce interentreprises) d'..." alias="46.76Z"/>
+          <Choice value="46.77Z - Commerce de gros (commerce interentreprises) de..." alias="46.77Z"/>
+          <Choice value="46.90Z - Commerce de gros (commerce interentreprises) no..." alias="46.90Z"/>
         </Choice>
-        <Choice value="47 - Commerce de d&#233;tail, &#224; l'exception des automobiles et des motocycles" alias="47">
+        <Choice value="47 - Commerce de d&#233;tail, &#224; l'exception des automobiles et des ..." alias="47">
           <Choice value="47.11A - Commerce de d&#233;tail de produits surgel&#233;s" alias="47.11A"/>
           <Choice value="47.11B - Commerce d'alimentation g&#233;n&#233;rale" alias="47.11B"/>
           <Choice value="47.11C - Sup&#233;rettes" alias="47.11C"/>
@@ -549,49 +549,49 @@
           <Choice value="47.11E - Magasins multi-commerces" alias="47.11E"/>
           <Choice value="47.11F - Hypermarch&#233;s" alias="47.11F"/>
           <Choice value="47.19A - Grands magasins" alias="47.19A"/>
-          <Choice value="47.19B - Autres commerces de d&#233;tail en magasin non sp&#233;cialis&#233;" alias="47.19B"/>
-          <Choice value="47.21Z - Commerce de d&#233;tail de fruits et l&#233;gumes en magasin sp&#233;cialis&#233;" alias="47.21Z"/>
-          <Choice value="47.22Z - Commerce de d&#233;tail de viandes et de produits &#224; base de viande en magasin sp&#233;cialis&#233;" alias="47.22Z"/>
-          <Choice value="47.23Z - Commerce de d&#233;tail de poissons, crustac&#233;s et mollusques en magasin sp&#233;cialis&#233;" alias="47.23Z"/>
-          <Choice value="47.24Z - Commerce de d&#233;tail de pain, p&#226;tisserie et confiserie en magasin sp&#233;cialis&#233;" alias="47.24Z"/>
-          <Choice value="47.25Z - Commerce de d&#233;tail de boissons en magasin sp&#233;cialis&#233;" alias="47.25Z"/>
-          <Choice value="47.26Z - Commerce de d&#233;tail de produits &#224; base de tabac en magasin sp&#233;cialis&#233;" alias="47.26Z"/>
-          <Choice value="47.29Z - Autres commerces de d&#233;tail alimentaires en magasin sp&#233;cialis&#233;" alias="47.29Z"/>
-          <Choice value="47.30Z - Commerce de d&#233;tail de carburants en magasin sp&#233;cialis&#233;" alias="47.30Z"/>
-          <Choice value="47.41Z - Commerce de d&#233;tail d'ordinateurs, d'unit&#233;s p&#233;riph&#233;riques et de logiciels en magasin sp&#233;cialis&#233;" alias="47.41Z"/>
-          <Choice value="47.42Z - Commerce de d&#233;tail de mat&#233;riels de t&#233;l&#233;communication en magasin sp&#233;cialis&#233;" alias="47.42Z"/>
-          <Choice value="47.43Z - Commerce de d&#233;tail de mat&#233;riels audio et vid&#233;o en magasin sp&#233;cialis&#233;" alias="47.43Z"/>
-          <Choice value="47.51Z - Commerce de d&#233;tail de textiles en magasin sp&#233;cialis&#233;" alias="47.51Z"/>
-          <Choice value="47.52A - Commerce de d&#233;tail de quincaillerie, peintures et verres en petites surfaces (moins de 400 m&#178;)" alias="47.52A"/>
-          <Choice value="47.52B - Commerce de d&#233;tail de quincaillerie, peintures et verres en grandes surfaces (400 m&#178; et plus)" alias="47.52B"/>
-          <Choice value="47.53Z - Commerce de d&#233;tail de tapis, moquettes et rev&#234;tements de murs et de sols en magasin sp&#233;cialis&#233;" alias="47.53Z"/>
-          <Choice value="47.54Z - Commerce de d&#233;tail d'appareils &#233;lectrom&#233;nagers en magasin sp&#233;cialis&#233;" alias="47.54Z"/>
+          <Choice value="47.19B - Autres commerces de d&#233;tail en magasin non sp&#233;ci..." alias="47.19B"/>
+          <Choice value="47.21Z - Commerce de d&#233;tail de fruits et l&#233;gumes en maga..." alias="47.21Z"/>
+          <Choice value="47.22Z - Commerce de d&#233;tail de viandes et de produits &#224; ..." alias="47.22Z"/>
+          <Choice value="47.23Z - Commerce de d&#233;tail de poissons, crustac&#233;s et mo..." alias="47.23Z"/>
+          <Choice value="47.24Z - Commerce de d&#233;tail de pain, p&#226;tisserie et confi..." alias="47.24Z"/>
+          <Choice value="47.25Z - Commerce de d&#233;tail de boissons en magasin sp&#233;ci..." alias="47.25Z"/>
+          <Choice value="47.26Z - Commerce de d&#233;tail de produits &#224; base de tabac ..." alias="47.26Z"/>
+          <Choice value="47.29Z - Autres commerces de d&#233;tail alimentaires en maga..." alias="47.29Z"/>
+          <Choice value="47.30Z - Commerce de d&#233;tail de carburants en magasin sp&#233;..." alias="47.30Z"/>
+          <Choice value="47.41Z - Commerce de d&#233;tail d'ordinateurs, d'unit&#233;s p&#233;ri..." alias="47.41Z"/>
+          <Choice value="47.42Z - Commerce de d&#233;tail de mat&#233;riels de t&#233;l&#233;communic..." alias="47.42Z"/>
+          <Choice value="47.43Z - Commerce de d&#233;tail de mat&#233;riels audio et vid&#233;o ..." alias="47.43Z"/>
+          <Choice value="47.51Z - Commerce de d&#233;tail de textiles en magasin sp&#233;ci..." alias="47.51Z"/>
+          <Choice value="47.52A - Commerce de d&#233;tail de quincaillerie, peintures ..." alias="47.52A"/>
+          <Choice value="47.52B - Commerce de d&#233;tail de quincaillerie, peintures ..." alias="47.52B"/>
+          <Choice value="47.53Z - Commerce de d&#233;tail de tapis, moquettes et rev&#234;t..." alias="47.53Z"/>
+          <Choice value="47.54Z - Commerce de d&#233;tail d'appareils &#233;lectrom&#233;nagers ..." alias="47.54Z"/>
           <Choice value="47.59A - Commerce de d&#233;tail de meubles" alias="47.59A"/>
           <Choice value="47.59B - Commerce de d&#233;tail d'autres &#233;quipements du foyer" alias="47.59B"/>
           <Choice value="47.61Z - Commerce de d&#233;tail de livres en magasin sp&#233;cialis&#233;" alias="47.61Z"/>
-          <Choice value="47.62Z - Commerce de d&#233;tail de journaux et papeterie en magasin sp&#233;cialis&#233;" alias="47.62Z"/>
-          <Choice value="47.63Z - Commerce de d&#233;tail d'enregistrements musicaux et vid&#233;o en magasin sp&#233;cialis&#233;" alias="47.63Z"/>
-          <Choice value="47.64Z - Commerce de d&#233;tail d'articles de sport en magasin sp&#233;cialis&#233;" alias="47.64Z"/>
-          <Choice value="47.65Z - Commerce de d&#233;tail de jeux et jouets en magasin sp&#233;cialis&#233;" alias="47.65Z"/>
-          <Choice value="47.71Z - Commerce de d&#233;tail d'habillement en magasin sp&#233;cialis&#233;" alias="47.71Z"/>
+          <Choice value="47.62Z - Commerce de d&#233;tail de journaux et papeterie en ..." alias="47.62Z"/>
+          <Choice value="47.63Z - Commerce de d&#233;tail d'enregistrements musicaux e..." alias="47.63Z"/>
+          <Choice value="47.64Z - Commerce de d&#233;tail d'articles de sport en magas..." alias="47.64Z"/>
+          <Choice value="47.65Z - Commerce de d&#233;tail de jeux et jouets en magasin..." alias="47.65Z"/>
+          <Choice value="47.71Z - Commerce de d&#233;tail d'habillement en magasin sp&#233;..." alias="47.71Z"/>
           <Choice value="47.72A - Commerce de d&#233;tail de la chaussure" alias="47.72A"/>
-          <Choice value="47.72B - Commerce de d&#233;tail de maroquinerie et d'articles de voyage" alias="47.72B"/>
-          <Choice value="47.73Z - Commerce de d&#233;tail de produits pharmaceutiques en magasin sp&#233;cialis&#233;" alias="47.73Z"/>
-          <Choice value="47.74Z - Commerce de d&#233;tail d'articles m&#233;dicaux et orthop&#233;diques en magasin sp&#233;cialis&#233;" alias="47.74Z"/>
-          <Choice value="47.75Z - Commerce de d&#233;tail de parfumerie et de produits de beaut&#233; en magasin sp&#233;cialis&#233;" alias="47.75Z"/>
-          <Choice value="47.76Z - Commerce de d&#233;tail de fleurs, plantes, graines, engrais, animaux de compagnie et aliments pour ces animaux en magasin sp&#233;cialis&#233;" alias="47.76Z"/>
-          <Choice value="47.77Z - Commerce de d&#233;tail d'articles d'horlogerie et de bijouterie en magasin sp&#233;cialis&#233;" alias="47.77Z"/>
+          <Choice value="47.72B - Commerce de d&#233;tail de maroquinerie et d'article..." alias="47.72B"/>
+          <Choice value="47.73Z - Commerce de d&#233;tail de produits pharmaceutiques ..." alias="47.73Z"/>
+          <Choice value="47.74Z - Commerce de d&#233;tail d'articles m&#233;dicaux et ortho..." alias="47.74Z"/>
+          <Choice value="47.75Z - Commerce de d&#233;tail de parfumerie et de produits..." alias="47.75Z"/>
+          <Choice value="47.76Z - Commerce de d&#233;tail de fleurs, plantes, graines,..." alias="47.76Z"/>
+          <Choice value="47.77Z - Commerce de d&#233;tail d'articles d'horlogerie et d..." alias="47.77Z"/>
           <Choice value="47.78A - Commerces de d&#233;tail d'optique" alias="47.78A"/>
           <Choice value="47.78B - Commerces de d&#233;tail de charbons et combustibles" alias="47.78B"/>
           <Choice value="47.78C - Autres commerces de d&#233;tail sp&#233;cialis&#233;s divers" alias="47.78C"/>
           <Choice value="47.79Z - Commerce de d&#233;tail de biens d'occasion en magasin" alias="47.79Z"/>
-          <Choice value="47.81Z - Commerce de d&#233;tail alimentaire sur &#233;ventaires et march&#233;s" alias="47.81Z"/>
-          <Choice value="47.82Z - Commerce de d&#233;tail de textiles, d'habillement et de chaussures sur &#233;ventaires et march&#233;s" alias="47.82Z"/>
-          <Choice value="47.89Z - Autres commerces de d&#233;tail sur &#233;ventaires et march&#233;s" alias="47.89Z"/>
+          <Choice value="47.81Z - Commerce de d&#233;tail alimentaire sur &#233;ventaires e..." alias="47.81Z"/>
+          <Choice value="47.82Z - Commerce de d&#233;tail de textiles, d'habillement e..." alias="47.82Z"/>
+          <Choice value="47.89Z - Autres commerces de d&#233;tail sur &#233;ventaires et ma..." alias="47.89Z"/>
           <Choice value="47.91A - Vente &#224; distance sur catalogue g&#233;n&#233;ral" alias="47.91A"/>
           <Choice value="47.91B - Vente &#224; distance sur catalogue sp&#233;cialis&#233;" alias="47.91B"/>
           <Choice value="47.99A - Vente &#224; domicile" alias="47.99A"/>
-          <Choice value="47.99B - Vente par automates et autres commerces de d&#233;tail hors magasin, &#233;ventaires ou march&#233;s n.c.a." alias="47.99B"/>
+          <Choice value="47.99B - Vente par automates et autres commerces de d&#233;ta..." alias="47.99B"/>
         </Choice>
       </Choice>
       <Choice value="H - TRANSPORTS ET ENTREPOSAGE" alias="H">
@@ -632,15 +632,15 @@
           <Choice value="52.29B - Affr&#232;tement et organisation des transports" alias="52.29B"/>
         </Choice>
         <Choice value="53 - Activit&#233;s de poste et de courrier" alias="53">
-          <Choice value="53.10Z - Activit&#233;s de poste dans le cadre d'une obligation de service universel" alias="53.10Z"/>
+          <Choice value="53.10Z - Activit&#233;s de poste dans le cadre d'une obligati..." alias="53.10Z"/>
           <Choice value="53.20Z - Autres activit&#233;s de poste et de courrier" alias="53.20Z"/>
         </Choice>
       </Choice>
       <Choice value="I - H&#201;BERGEMENT ET RESTAURATION" alias="I">
         <Choice value="55 - H&#233;bergement" alias="55">
           <Choice value="55.10Z - H&#244;tels et h&#233;bergement similaire" alias="55.10Z"/>
-          <Choice value="55.20Z - H&#233;bergement touristique et autre h&#233;bergement de courte dur&#233;e" alias="55.20Z"/>
-          <Choice value="55.30Z - Terrains de camping et parcs pour caravanes ou v&#233;hicules de loisirs" alias="55.30Z"/>
+          <Choice value="55.20Z - H&#233;bergement touristique et autre h&#233;bergement de..." alias="55.20Z"/>
+          <Choice value="55.30Z - Terrains de camping et parcs pour caravanes ou ..." alias="55.30Z"/>
           <Choice value="55.90Z - Autres h&#233;bergements" alias="55.90Z"/>
         </Choice>
         <Choice value="56 - Restauration" alias="56">
@@ -662,14 +662,14 @@
           <Choice value="58.19Z - Autres activit&#233;s d'&#233;dition" alias="58.19Z"/>
           <Choice value="58.21Z - &#201;dition de jeux &#233;lectroniques" alias="58.21Z"/>
           <Choice value="58.29A - &#201;dition de logiciels syst&#232;me et de r&#233;seau" alias="58.29A"/>
-          <Choice value="58.29B - &#201;dition de logiciels outils de d&#233;veloppement et de langages" alias="58.29B"/>
+          <Choice value="58.29B - &#201;dition de logiciels outils de d&#233;veloppement et..." alias="58.29B"/>
           <Choice value="58.29C - &#201;dition de logiciels applicatifs" alias="58.29C"/>
         </Choice>
-        <Choice value="59 - Production de films cin&#233;matographiques, de vid&#233;o et de programmes de t&#233;l&#233;vision ; enregistrement sonore et &#233;dition musicale" alias="59">
-          <Choice value="59.11A - Production de films et de programmes pour la t&#233;l&#233;vision" alias="59.11A"/>
-          <Choice value="59.11B - Production de films institutionnels et publicitaires" alias="59.11B"/>
+        <Choice value="59 - Production de films cin&#233;matographiques, de vid&#233;o et de pr..." alias="59">
+          <Choice value="59.11A - Production de films et de programmes pour la t&#233;..." alias="59.11A"/>
+          <Choice value="59.11B - Production de films institutionnels et publicit..." alias="59.11B"/>
           <Choice value="59.11C - Production de films pour le cin&#233;ma" alias="59.11C"/>
-          <Choice value="59.12Z - Post-production de films cin&#233;matographiques, de vid&#233;o et de programmes de t&#233;l&#233;vision" alias="59.12Z"/>
+          <Choice value="59.12Z - Post-production de films cin&#233;matographiques, de..." alias="59.12Z"/>
           <Choice value="59.13A - Distribution de films cin&#233;matographiques" alias="59.13A"/>
           <Choice value="59.13B - &#201;dition et distribution vid&#233;o" alias="59.13B"/>
           <Choice value="59.14Z - Projection de films cin&#233;matographiques" alias="59.14Z"/>
@@ -689,26 +689,26 @@
         <Choice value="62 - Programmation, conseil et autres activit&#233;s informatiques" alias="62">
           <Choice value="62.01Z - Programmation informatique" alias="62.01Z"/>
           <Choice value="62.02A - Conseil en syst&#232;mes et logiciels informatiques" alias="62.02A"/>
-          <Choice value="62.02B - Tierce maintenance de syst&#232;mes et d'applications informatiques" alias="62.02B"/>
+          <Choice value="62.02B - Tierce maintenance de syst&#232;mes et d'application..." alias="62.02B"/>
           <Choice value="62.03Z - Gestion d'installations informatiques" alias="62.03Z"/>
           <Choice value="62.09Z - Autres activit&#233;s informatiques" alias="62.09Z"/>
         </Choice>
         <Choice value="63 - Services d'information" alias="63">
-          <Choice value="63.11Z - Traitement de donn&#233;es, h&#233;bergement et activit&#233;s connexes" alias="63.11Z"/>
+          <Choice value="63.11Z - Traitement de donn&#233;es, h&#233;bergement et activit&#233;s..." alias="63.11Z"/>
           <Choice value="63.12Z - Portails Internet" alias="63.12Z"/>
           <Choice value="63.91Z - Activit&#233;s des agences de presse" alias="63.91Z"/>
           <Choice value="63.99Z - Autres services d'information n.c.a." alias="63.99Z"/>
         </Choice>
       </Choice>
       <Choice value="K - ACTIVIT&#201;S FINANCI&#200;RES ET D'ASSURANCE" alias="K">
-        <Choice value="64 - Activit&#233;s des services financiers, hors assurance et caisses de retraite" alias="64">
+        <Choice value="64 - Activit&#233;s des services financiers, hors assurance et cais..." alias="64">
           <Choice value="64.11Z - Activit&#233;s de banque centrale" alias="64.11Z"/>
           <Choice value="64.19Z - Autres interm&#233;diations mon&#233;taires" alias="64.19Z"/>
           <Choice value="64.20Z - Activit&#233;s des soci&#233;t&#233;s holding" alias="64.20Z"/>
-          <Choice value="64.30Z - Fonds de placement et entit&#233;s financi&#232;res similaires" alias="64.30Z"/>
+          <Choice value="64.30Z - Fonds de placement et entit&#233;s financi&#232;res simil..." alias="64.30Z"/>
           <Choice value="64.91Z - Cr&#233;dit-bail" alias="64.91Z"/>
           <Choice value="64.92Z - Autre distribution de cr&#233;dit" alias="64.92Z"/>
-          <Choice value="64.99Z - Autres activit&#233;s des services financiers, hors assurance et caisses de retraite, n.c.a." alias="64.99Z"/>
+          <Choice value="64.99Z - Autres activit&#233;s des services financiers, hors ..." alias="64.99Z"/>
         </Choice>
         <Choice value="65 - Assurance" alias="65">
           <Choice value="65.11Z - Assurance vie" alias="65.11Z"/>
@@ -719,11 +719,11 @@
         <Choice value="66 - Activit&#233;s auxiliaires de services financiers et d'assurance" alias="66">
           <Choice value="66.11Z - Administration de march&#233;s financiers" alias="66.11Z"/>
           <Choice value="66.12Z - Courtage de valeurs mobili&#232;res et de marchandises" alias="66.12Z"/>
-          <Choice value="66.19A - Supports juridiques de gestion de patrimoine mobilier" alias="66.19A"/>
-          <Choice value="66.19B - Autres activit&#233;s auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a." alias="66.19B"/>
+          <Choice value="66.19A - Supports juridiques de gestion de patrimoine mo..." alias="66.19A"/>
+          <Choice value="66.19B - Autres activit&#233;s auxiliaires de services financ..." alias="66.19B"/>
           <Choice value="66.21Z - &#201;valuation des risques et dommages" alias="66.21Z"/>
           <Choice value="66.22Z - Activit&#233;s des agents et courtiers d'assurances" alias="66.22Z"/>
-          <Choice value="66.29Z - Autres activit&#233;s auxiliaires d'assurance et de caisses de retraite" alias="66.29Z"/>
+          <Choice value="66.29Z - Autres activit&#233;s auxiliaires d'assurance et de ..." alias="66.29Z"/>
           <Choice value="66.30Z - Gestion de fonds" alias="66.30Z"/>
         </Choice>
       </Choice>
@@ -733,11 +733,11 @@
           <Choice value="68.20A - Location de logements" alias="68.20A"/>
           <Choice value="68.20B - Location de terrains et d'autres biens immobiliers" alias="68.20B"/>
           <Choice value="68.31Z - Agences immobili&#232;res" alias="68.31Z"/>
-          <Choice value="68.32A - Administration d'immeubles et autres biens immobiliers" alias="68.32A"/>
-          <Choice value="68.32B - Supports juridiques de gestion de patrimoine immobilier" alias="68.32B"/>
+          <Choice value="68.32A - Administration d'immeubles et autres biens immo..." alias="68.32A"/>
+          <Choice value="68.32B - Supports juridiques de gestion de patrimoine im..." alias="68.32B"/>
         </Choice>
       </Choice>
-      <Choice value="M - ACTIVIT&#201;S SP&#201;CIALIS&#201;ES, SCIENTIFIQUES ET TECHNIQUES" alias="M">
+      <Choice value="M - ACTIVIT&#201;S SP&#201;CIALIS&#201;ES, SCIENTIFIQUES ET TECHNI..." alias="M">
         <Choice value="69 - Activit&#233;s juridiques et comptables" alias="69">
           <Choice value="69.10Z - Activit&#233;s juridiques" alias="69.10Z"/>
           <Choice value="69.20Z - Activit&#233;s comptables" alias="69.20Z"/>
@@ -745,9 +745,9 @@
         <Choice value="70 - Activit&#233;s des si&#232;ges sociaux ; conseil de gestion" alias="70">
           <Choice value="70.10Z - Activit&#233;s des si&#232;ges sociaux" alias="70.10Z"/>
           <Choice value="70.21Z - Conseil en relations publiques et communication" alias="70.21Z"/>
-          <Choice value="70.22Z - Conseil pour les affaires et autres conseils de gestion" alias="70.22Z"/>
+          <Choice value="70.22Z - Conseil pour les affaires et autres conseils de..." alias="70.22Z"/>
         </Choice>
-        <Choice value="71 - Activit&#233;s d'architecture et d'ing&#233;nierie ; activit&#233;s de contr&#244;le et analyses techniques" alias="71">
+        <Choice value="71 - Activit&#233;s d'architecture et d'ing&#233;nierie ; activit&#233;s de c..." alias="71">
           <Choice value="71.11Z - Activit&#233;s d'architecture" alias="71.11Z"/>
           <Choice value="71.12A - Activit&#233; des g&#233;om&#232;tres" alias="71.12A"/>
           <Choice value="71.12B - Ing&#233;nierie, &#233;tudes techniques" alias="71.12B"/>
@@ -756,8 +756,8 @@
         </Choice>
         <Choice value="72 - Recherche-d&#233;veloppement scientifique" alias="72">
           <Choice value="72.11Z - Recherche-d&#233;veloppement en biotechnologie" alias="72.11Z"/>
-          <Choice value="72.19Z - Recherche-d&#233;veloppement en autres sciences physiques et naturelles" alias="72.19Z"/>
-          <Choice value="72.20Z - Recherche-d&#233;veloppement en sciences humaines et sociales" alias="72.20Z"/>
+          <Choice value="72.19Z - Recherche-d&#233;veloppement en autres sciences phys..." alias="72.19Z"/>
+          <Choice value="72.20Z - Recherche-d&#233;veloppement en sciences humaines et..." alias="72.20Z"/>
         </Choice>
         <Choice value="73 - Publicit&#233; et &#233;tudes de march&#233;" alias="73">
           <Choice value="73.11Z - Activit&#233;s des agences de publicit&#233;" alias="73.11Z"/>
@@ -769,7 +769,7 @@
           <Choice value="74.20Z - Activit&#233;s photographiques" alias="74.20Z"/>
           <Choice value="74.30Z - Traduction et interpr&#233;tation" alias="74.30Z"/>
           <Choice value="74.90A - Activit&#233; des &#233;conomistes de la construction" alias="74.90A"/>
-          <Choice value="74.90B - Activit&#233;s sp&#233;cialis&#233;es, scientifiques et techniques diverses" alias="74.90B"/>
+          <Choice value="74.90B - Activit&#233;s sp&#233;cialis&#233;es, scientifiques et techni..." alias="74.90B"/>
         </Choice>
         <Choice value="75 - Activit&#233;s v&#233;t&#233;rinaires" alias="75">
           <Choice value="75.00Z - Activit&#233;s v&#233;t&#233;rinaires" alias="75.00Z"/>
@@ -777,29 +777,29 @@
       </Choice>
       <Choice value="N - ACTIVIT&#201;S DE SERVICES ADMINISTRATIFS ET DE SOUTIEN" alias="N">
         <Choice value="77 - Activit&#233;s de location et location-bail" alias="77">
-          <Choice value="77.11A - Location de courte dur&#233;e de voitures et de v&#233;hicules automobiles l&#233;gers" alias="77.11A"/>
-          <Choice value="77.11B - Location de longue dur&#233;e de voitures et de v&#233;hicules automobiles l&#233;gers" alias="77.11B"/>
+          <Choice value="77.11A - Location de courte dur&#233;e de voitures et de v&#233;hi..." alias="77.11A"/>
+          <Choice value="77.11B - Location de longue dur&#233;e de voitures et de v&#233;hi..." alias="77.11B"/>
           <Choice value="77.12Z - Location et location-bail de camions" alias="77.12Z"/>
-          <Choice value="77.21Z - Location et location-bail d'articles de loisirs et de sport" alias="77.21Z"/>
+          <Choice value="77.21Z - Location et location-bail d'articles de loisirs..." alias="77.21Z"/>
           <Choice value="77.22Z - Location de vid&#233;ocassettes et disques vid&#233;o" alias="77.22Z"/>
-          <Choice value="77.29Z - Location et location-bail d'autres biens personnels et domestiques" alias="77.29Z"/>
-          <Choice value="77.31Z - Location et location-bail de machines et &#233;quipements agricoles" alias="77.31Z"/>
-          <Choice value="77.32Z - Location et location-bail de machines et &#233;quipements pour la construction" alias="77.32Z"/>
-          <Choice value="77.33Z - Location et location-bail de machines de bureau et de mat&#233;riel informatique" alias="77.33Z"/>
-          <Choice value="77.34Z - Location et location-bail de mat&#233;riels de transport par eau" alias="77.34Z"/>
-          <Choice value="77.35Z - Location et location-bail de mat&#233;riels de transport a&#233;rien" alias="77.35Z"/>
-          <Choice value="77.39Z - Location et location-bail d'autres machines, &#233;quipements et biens mat&#233;riels n.c.a." alias="77.39Z"/>
-          <Choice value="77.40Z - Location-bail de propri&#233;t&#233; intellectuelle et de produits similaires, &#224; l'exception des &#339;uvres soumises &#224; copyright" alias="77.40Z"/>
+          <Choice value="77.29Z - Location et location-bail d'autres biens person..." alias="77.29Z"/>
+          <Choice value="77.31Z - Location et location-bail de machines et &#233;quipe..." alias="77.31Z"/>
+          <Choice value="77.32Z - Location et location-bail de machines et &#233;quipe..." alias="77.32Z"/>
+          <Choice value="77.33Z - Location et location-bail de machines de bureau..." alias="77.33Z"/>
+          <Choice value="77.34Z - Location et location-bail de mat&#233;riels de trans..." alias="77.34Z"/>
+          <Choice value="77.35Z - Location et location-bail de mat&#233;riels de trans..." alias="77.35Z"/>
+          <Choice value="77.39Z - Location et location-bail d'autres machines, &#233;q..." alias="77.39Z"/>
+          <Choice value="77.40Z - Location-bail de propri&#233;t&#233; intellectuelle et de..." alias="77.40Z"/>
         </Choice>
         <Choice value="78 - Activit&#233;s li&#233;es &#224; l'emploi" alias="78">
           <Choice value="78.10Z - Activit&#233;s des agences de placement de main-d'&#339;uvre" alias="78.10Z"/>
           <Choice value="78.20Z - Activit&#233;s des agences de travail temporaire" alias="78.20Z"/>
           <Choice value="78.30Z - Autre mise &#224; disposition de ressources humaines" alias="78.30Z"/>
         </Choice>
-        <Choice value="79 - Activit&#233;s des agences de voyage, voyagistes, services de r&#233;servation et activit&#233;s connexes" alias="79">
+        <Choice value="79 - Activit&#233;s des agences de voyage, voyagistes, services de ..." alias="79">
           <Choice value="79.11Z - Activit&#233;s des agences de voyage" alias="79.11Z"/>
           <Choice value="79.12Z - Activit&#233;s des voyagistes" alias="79.12Z"/>
-          <Choice value="79.90Z - Autres services de r&#233;servation et activit&#233;s connexes" alias="79.90Z"/>
+          <Choice value="79.90Z - Autres services de r&#233;servation et activit&#233;s con..." alias="79.90Z"/>
         </Choice>
         <Choice value="80 - Enqu&#234;tes et s&#233;curit&#233;" alias="80">
           <Choice value="80.10Z - Activit&#233;s de s&#233;curit&#233; priv&#233;e" alias="80.10Z"/>
@@ -809,26 +809,26 @@
         <Choice value="81 - Services relatifs aux b&#226;timents et am&#233;nagement paysager" alias="81">
           <Choice value="81.10Z - Activit&#233;s combin&#233;es de soutien li&#233; aux b&#226;timents" alias="81.10Z"/>
           <Choice value="81.21Z - Nettoyage courant des b&#226;timents" alias="81.21Z"/>
-          <Choice value="81.22Z - Autres activit&#233;s de nettoyage des b&#226;timents et nettoyage industriel" alias="81.22Z"/>
+          <Choice value="81.22Z - Autres activit&#233;s de nettoyage des b&#226;timents et ..." alias="81.22Z"/>
           <Choice value="81.29A - D&#233;sinfection, d&#233;sinsectisation, d&#233;ratisation" alias="81.29A"/>
           <Choice value="81.29B - Autres activit&#233;s de nettoyage n.c.a." alias="81.29B"/>
           <Choice value="81.30Z - Services d'am&#233;nagement paysager" alias="81.30Z"/>
         </Choice>
-        <Choice value="82 - Activit&#233;s administratives et autres activit&#233;s de soutien aux entreprises" alias="82">
+        <Choice value="82 - Activit&#233;s administratives et autres activit&#233;s de soutien ..." alias="82">
           <Choice value="82.11Z - Services administratifs combin&#233;s de bureau" alias="82.11Z"/>
-          <Choice value="82.19Z - Photocopie, pr&#233;paration de documents et autres activit&#233;s sp&#233;cialis&#233;es de soutien de bureau" alias="82.19Z"/>
+          <Choice value="82.19Z - Photocopie, pr&#233;paration de documents et autres ..." alias="82.19Z"/>
           <Choice value="82.20Z - Activit&#233;s de centres d'appels" alias="82.20Z"/>
-          <Choice value="82.30Z - Organisation de foires, salons professionnels et congr&#232;s" alias="82.30Z"/>
-          <Choice value="82.91Z - Activit&#233;s des agences de recouvrement de factures et des soci&#233;t&#233;s d'information financi&#232;re sur la client&#232;le" alias="82.91Z"/>
+          <Choice value="82.30Z - Organisation de foires, salons professionnels e..." alias="82.30Z"/>
+          <Choice value="82.91Z - Activit&#233;s des agences de recouvrement de factur..." alias="82.91Z"/>
           <Choice value="82.92Z - Activit&#233;s de conditionnement" alias="82.92Z"/>
           <Choice value="82.99Z - Autres activit&#233;s de soutien aux entreprises n.c.a." alias="82.99Z"/>
         </Choice>
       </Choice>
       <Choice value="O - ADMINISTRATION PUBLIQUE" alias="O">
-        <Choice value="84 - Administration publique et d&#233;fense ; s&#233;curit&#233; sociale obligatoire" alias="84">
+        <Choice value="84 - Administration publique et d&#233;fense ; s&#233;curit&#233; sociale obl..." alias="84">
           <Choice value="84.11Z - Administration publique g&#233;n&#233;rale" alias="84.11Z"/>
-          <Choice value="84.12Z - Administration publique (tutelle) de la sant&#233;, de la formation, de la culture et des services sociaux, autre que s&#233;curit&#233; sociale" alias="84.12Z"/>
-          <Choice value="84.13Z - Administration publique (tutelle) des activit&#233;s &#233;conomiques" alias="84.13Z"/>
+          <Choice value="84.12Z - Administration publique (tutelle) de la sant&#233;, ..." alias="84.12Z"/>
+          <Choice value="84.13Z - Administration publique (tutelle) des activit&#233;s..." alias="84.13Z"/>
           <Choice value="84.21Z - Affaires &#233;trang&#232;res" alias="84.21Z"/>
           <Choice value="84.22Z - D&#233;fense" alias="84.22Z"/>
           <Choice value="84.23Z - Justice" alias="84.23Z"/>
@@ -847,7 +847,7 @@
           <Choice value="85.32Z - Enseignement secondaire technique ou professionnel" alias="85.32Z"/>
           <Choice value="85.41Z - Enseignement post-secondaire non sup&#233;rieur" alias="85.41Z"/>
           <Choice value="85.42Z - Enseignement sup&#233;rieur" alias="85.42Z"/>
-          <Choice value="85.51Z - Enseignement de disciplines sportives et d'activit&#233;s de loisirs" alias="85.51Z"/>
+          <Choice value="85.51Z - Enseignement de disciplines sportives et d'acti..." alias="85.51Z"/>
           <Choice value="85.52Z - Enseignement culturel" alias="85.52Z"/>
           <Choice value="85.53Z - Enseignement de la conduite" alias="85.53Z"/>
           <Choice value="85.59A - Formation continue d'adultes" alias="85.59A"/>
@@ -867,27 +867,27 @@
           <Choice value="86.90B - Laboratoires d'analyses m&#233;dicales" alias="86.90B"/>
           <Choice value="86.90C - Centres de collecte et banques d'organes" alias="86.90C"/>
           <Choice value="86.90D - Activit&#233;s des infirmiers et des sages-femmes" alias="86.90D"/>
-          <Choice value="86.90E - Activit&#233;s des professionnels de la r&#233;&#233;ducation, de l'appareillage et des p&#233;dicures-podologues" alias="86.90E"/>
+          <Choice value="86.90E - Activit&#233;s des professionnels de la r&#233;&#233;ducation,..." alias="86.90E"/>
           <Choice value="86.90F - Activit&#233;s de sant&#233; humaine non class&#233;es ailleurs" alias="86.90F"/>
         </Choice>
         <Choice value="87 - H&#233;bergement m&#233;dico-social et social" alias="87">
           <Choice value="87.10A - H&#233;bergement m&#233;dicalis&#233; pour personnes &#226;g&#233;es" alias="87.10A"/>
           <Choice value="87.10B - H&#233;bergement m&#233;dicalis&#233; pour enfants handicap&#233;s" alias="87.10B"/>
-          <Choice value="87.10C - H&#233;bergement m&#233;dicalis&#233; pour adultes handicap&#233;s et autre h&#233;bergement m&#233;dicalis&#233;" alias="87.10C"/>
-          <Choice value="87.20A - H&#233;bergement social pour handicap&#233;s mentaux et malades mentaux" alias="87.20A"/>
+          <Choice value="87.10C - H&#233;bergement m&#233;dicalis&#233; pour adultes handicap&#233;s ..." alias="87.10C"/>
+          <Choice value="87.20A - H&#233;bergement social pour handicap&#233;s mentaux et m..." alias="87.20A"/>
           <Choice value="87.20B - H&#233;bergement social pour toxicomanes" alias="87.20B"/>
           <Choice value="87.30A - H&#233;bergement social pour personnes &#226;g&#233;es" alias="87.30A"/>
           <Choice value="87.30B - H&#233;bergement social pour handicap&#233;s physiques" alias="87.30B"/>
           <Choice value="87.90A - H&#233;bergement social pour enfants en difficult&#233;s" alias="87.90A"/>
-          <Choice value="87.90B - H&#233;bergement social pour adultes et familles en difficult&#233;s et autre h&#233;bergement social" alias="87.90B"/>
+          <Choice value="87.90B - H&#233;bergement social pour adultes et familles en ..." alias="87.90B"/>
         </Choice>
         <Choice value="88 - Action sociale sans h&#233;bergement" alias="88">
           <Choice value="88.10A - Aide &#224; domicile" alias="88.10A"/>
-          <Choice value="88.10B - Accueil ou accompagnement sans h&#233;bergement d'adultes handicap&#233;s ou de personnes &#226;g&#233;es" alias="88.10B"/>
+          <Choice value="88.10B - Accueil ou accompagnement sans h&#233;bergement d'ad..." alias="88.10B"/>
           <Choice value="88.10C - Aide par le travail" alias="88.10C"/>
           <Choice value="88.91A - Accueil de jeunes enfants" alias="88.91A"/>
-          <Choice value="88.91B - Accueil ou accompagnement sans h&#233;bergement d'enfants handicap&#233;s" alias="88.91B"/>
-          <Choice value="88.99A - Autre accueil ou accompagnement sans h&#233;bergement d'enfants et d'adolescents" alias="88.99A"/>
+          <Choice value="88.91B - Accueil ou accompagnement sans h&#233;bergement d'en..." alias="88.91B"/>
+          <Choice value="88.99A - Autre accueil ou accompagnement sans h&#233;bergemen..." alias="88.99A"/>
           <Choice value="88.99B - Action sociale sans h&#233;bergement n.c.a." alias="88.99B"/>
         </Choice>
       </Choice>
@@ -899,11 +899,11 @@
           <Choice value="90.03B - Autre cr&#233;ation artistique" alias="90.03B"/>
           <Choice value="90.04Z - Gestion de salles de spectacles" alias="90.04Z"/>
         </Choice>
-        <Choice value="91 - Biblioth&#232;ques, archives, mus&#233;es et autres activit&#233;s culturelles" alias="91">
+        <Choice value="91 - Biblioth&#232;ques, archives, mus&#233;es et autres activit&#233;s cultu..." alias="91">
           <Choice value="91.01Z - Gestion des biblioth&#232;ques et des archives" alias="91.01Z"/>
           <Choice value="91.02Z - Gestion des mus&#233;es" alias="91.02Z"/>
-          <Choice value="91.03Z - Gestion des sites et monuments historiques et des attractions touristiques similaires" alias="91.03Z"/>
-          <Choice value="91.04Z - Gestion des jardins botaniques et zoologiques et des r&#233;serves naturelles" alias="91.04Z"/>
+          <Choice value="91.03Z - Gestion des sites et monuments historiques et d..." alias="91.03Z"/>
+          <Choice value="91.04Z - Gestion des jardins botaniques et zoologiques e..." alias="91.04Z"/>
         </Choice>
         <Choice value="92 - Organisation de jeux de hasard et d'argent" alias="92">
           <Choice value="92.00Z - Organisation de jeux de hasard et d'argent" alias="92.00Z"/>
@@ -913,28 +913,28 @@
           <Choice value="93.12Z - Activit&#233;s de clubs de sports" alias="93.12Z"/>
           <Choice value="93.13Z - Activit&#233;s des centres de culture physique" alias="93.13Z"/>
           <Choice value="93.19Z - Autres activit&#233;s li&#233;es au sport" alias="93.19Z"/>
-          <Choice value="93.21Z - Activit&#233;s des parcs d'attractions et parcs &#224; th&#232;mes" alias="93.21Z"/>
+          <Choice value="93.21Z - Activit&#233;s des parcs d'attractions et parcs &#224; th..." alias="93.21Z"/>
           <Choice value="93.29Z - Autres activit&#233;s r&#233;cr&#233;atives et de loisirs" alias="93.29Z"/>
         </Choice>
       </Choice>
       <Choice value="S - AUTRES ACTIVIT&#201;S DE SERVICES" alias="S">
         <Choice value="94 - Activit&#233;s des organisations associatives" alias="94">
-          <Choice value="94.11Z - Activit&#233;s des organisations patronales et consulaires" alias="94.11Z"/>
+          <Choice value="94.11Z - Activit&#233;s des organisations patronales et consu..." alias="94.11Z"/>
           <Choice value="94.12Z - Activit&#233;s des organisations professionnelles" alias="94.12Z"/>
           <Choice value="94.20Z - Activit&#233;s des syndicats de salari&#233;s" alias="94.20Z"/>
           <Choice value="94.91Z - Activit&#233;s des organisations religieuses" alias="94.91Z"/>
           <Choice value="94.92Z - Activit&#233;s des organisations politiques" alias="94.92Z"/>
-          <Choice value="94.99Z - Autres organisations fonctionnant par adh&#233;sion volontaire" alias="94.99Z"/>
+          <Choice value="94.99Z - Autres organisations fonctionnant par adh&#233;sion ..." alias="94.99Z"/>
         </Choice>
-        <Choice value="95 - R&#233;paration d'ordinateurs et de biens personnels et domestiques" alias="95">
-          <Choice value="95.11Z - R&#233;paration d'ordinateurs et d'&#233;quipements p&#233;riph&#233;riques" alias="95.11Z"/>
+        <Choice value="95 - R&#233;paration d'ordinateurs et de biens personnels et domest..." alias="95">
+          <Choice value="95.11Z - R&#233;paration d'ordinateurs et d'&#233;quipements p&#233;rip..." alias="95.11Z"/>
           <Choice value="95.12Z - R&#233;paration d'&#233;quipements de communication" alias="95.12Z"/>
           <Choice value="95.21Z - R&#233;paration de produits &#233;lectroniques grand public" alias="95.21Z"/>
-          <Choice value="95.22Z - R&#233;paration d'appareils &#233;lectrom&#233;nagers et d'&#233;quipements pour la maison et le jardin" alias="95.22Z"/>
+          <Choice value="95.22Z - R&#233;paration d'appareils &#233;lectrom&#233;nagers et d'&#233;qu..." alias="95.22Z"/>
           <Choice value="95.23Z - R&#233;paration de chaussures et d'articles en cuir" alias="95.23Z"/>
           <Choice value="95.24Z - R&#233;paration de meubles et d'&#233;quipements du foyer" alias="95.24Z"/>
-          <Choice value="95.25Z - R&#233;paration d'articles d'horlogerie et de bijouterie" alias="95.25Z"/>
-          <Choice value="95.29Z - R&#233;paration d'autres biens personnels et domestiques" alias="95.29Z"/>
+          <Choice value="95.25Z - R&#233;paration d'articles d'horlogerie et de bijout..." alias="95.25Z"/>
+          <Choice value="95.29Z - R&#233;paration d'autres biens personnels et domesti..." alias="95.29Z"/>
         </Choice>
         <Choice value="96 - Autres services personnels" alias="96">
           <Choice value="96.01A - Blanchisserie-teinturerie de gros" alias="96.01A"/>
@@ -946,18 +946,18 @@
           <Choice value="96.09Z - Autres services personnels n.c.a." alias="96.09Z"/>
         </Choice>
       </Choice>
-      <Choice value="T - ACTIVIT&#201;S DES M&#201;NAGES EN TANT QU'EMPLOYEURS ; ACTIVIT&#201;S INDIFF&#201;RENCI&#201;ES DES M&#201;NAGES EN TANT QUE PRODUCTEURS DE BIENS ET SERVICES POUR USAGE PROPRE" alias="T">
-        <Choice value="97 - Activit&#233;s des m&#233;nages en tant qu'employeurs de personnel domestique" alias="97">
-          <Choice value="97.00Z - Activit&#233;s des m&#233;nages en tant qu'employeurs de personnel domestique" alias="97.00Z"/>
+      <Choice value="T - ACTIVIT&#201;S DES M&#201;NAGES EN TANT QU'EMPLOYEURS ; A..." alias="T">
+        <Choice value="97 - Activit&#233;s des m&#233;nages en tant qu'employeurs de personnel ..." alias="97">
+          <Choice value="97.00Z - Activit&#233;s des m&#233;nages en tant qu'employeurs de ..." alias="97.00Z"/>
         </Choice>
-        <Choice value="98 - Activit&#233;s indiff&#233;renci&#233;es des m&#233;nages en tant que producteurs de biens et services pour usage propre" alias="98">
-          <Choice value="98.10Z - Activit&#233;s indiff&#233;renci&#233;es des m&#233;nages en tant que producteurs de biens pour usage propre" alias="98.10Z"/>
-          <Choice value="98.20Z - Activit&#233;s indiff&#233;renci&#233;es des m&#233;nages en tant que producteurs de services pour usage propre" alias="98.20Z"/>
+        <Choice value="98 - Activit&#233;s indiff&#233;renci&#233;es des m&#233;nages en tant que product..." alias="98">
+          <Choice value="98.10Z - Activit&#233;s indiff&#233;renci&#233;es des m&#233;nages en tant q..." alias="98.10Z"/>
+          <Choice value="98.20Z - Activit&#233;s indiff&#233;renci&#233;es des m&#233;nages en tant q..." alias="98.20Z"/>
         </Choice>
       </Choice>
       <Choice value="U - ACTIVIT&#201;S EXTRA-TERRITORIALES" alias="U">
         <Choice value="99 - Activit&#233;s des organisations et organismes extraterritoriaux" alias="99">
-          <Choice value="99.00Z - Activit&#233;s des organisations et organismes extraterritoriaux" alias="99.00Z"/>
+          <Choice value="99.00Z - Activit&#233;s des organisations et organismes extra..." alias="99.00Z"/>
         </Choice>
       </Choice>
     </Taxonomy>
