@@ -1,7 +1,7 @@
 <View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="D&#233;claration"/>
-    <Text name="text" value="Libell&#233; d'activit&#233; : $activ_pr_lib_et" highlightColor="#ff0000"/>
+    <Text name="text" value="Libell&#233; d'activit&#233; : $activ_pr_lib" highlightColor="#ff0000"/>
     <Text name="c05" value="Type de liasse : $liasse_type" highlightColor="#ff9900"/>
     <Text name="nat" value="Nature d'activit&#233; : $activ_nat_et" highlightColor="#0000ff"/>
     <Text name="surf" value="Surface : $activ_surf_et" highlightColor="#ffcc00"/>
@@ -961,5 +961,9 @@
         </Choice>
       </Choice>
     </Taxonomy>
+  </View>
+  <View>
+    <Header value="Commentaire"/>
+    <TextArea name="Remarques" toName="text" showSubmitButton="true" maxSubmissions="1" editable="true"/>
   </View>
 </View>

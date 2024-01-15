@@ -50,7 +50,7 @@ first_view = etree.SubElement(root, "View", style="box-shadow: 2px 2px 5px #999;
 header_element = etree.SubElement(first_view, "Header", value="Déclaration")
 
 
-text_element = etree.SubElement(first_view, "Text", name="text", value="Libellé d'activité : $activ_pr_lib_et", highlightColor="#ff0000")
+text_element = etree.SubElement(first_view, "Text", name="text", value="Libellé d'activité : $activ_pr_lib", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de liasse : $liasse_type", highlightColor="#ff9900")
 text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité : $activ_nat_et", highlightColor="#0000ff")
 text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface : $activ_surf_et", highlightColor="#ffcc00")
@@ -96,6 +96,13 @@ for section, section_df in data_naf.groupby('Section'):
             sous_classe_choice = etree.SubElement(division_choice, "Choice", value=f"{sous_classe} - {sous_classe_label}", alias=sous_classe)
             # Add style to each View element within the taxonomy
             #sous_classe_choice.set("style", "box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
+
+# Create the command View element
+comment_view = etree.SubElement(root, "View")
+
+# Create the Header element within the first View
+header_element = etree.SubElement(comment_view, "Header", value="Commentaire")
+text_element = etree.SubElement(comment_view, "TextArea", name="Remarques", toName="text", showSubmitButton="true", maxSubmissions="1", editable="true")
 
 # Create ElementTree and write to file
 tree = etree.ElementTree(root)
