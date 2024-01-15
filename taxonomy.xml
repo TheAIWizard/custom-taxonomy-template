@@ -1,12 +1,11 @@
 <View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="D&#233;claration"/>
-    <Text name="text" value="Libell&#233; d'activit&#233; : $activ_pr_lib" highlightColor="#ff0000"/>
-    <Text name="c05" value="Type de liasse : $liasse_type" highlightColor="#ff9900"/>
-    <Text name="nat" value="Nature d'activit&#233; : $activ_nat_et" highlightColor="#0000ff"/>
-    <Text name="surf" value="Surface : $activ_surf_et" highlightColor="#ffcc00"/>
-    <Text name="evt" value="Type d'&#233;v&#232;nement : $evenement_type" highlightColor="#00ff00"/>
-    <Text name="help_link" value="Aide &#224; la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles"/>
+    <Text name="text" value="Libell&#233; d'activit&#233; --> $activ_pr_lib" highlightColor="#ff0000"/>
+    <Text name="c05" value="Type de liasse --> $liasse_type" highlightColor="#ff9900"/>
+    <Text name="nat" value="Nature d'activit&#233; --> $activ_nat_et" highlightColor="#0000ff"/>
+    <Text name="surf" value="Surface --> $activ_surf_et" highlightColor="#ffcc00"/>
+    <Text name="evt" value="Type d'&#233;v&#232;nement --> $evenement_type" highlightColor="#00ff00"/>
   </View>
   <View>
     <Taxonomy name="taxonomy" toName="text" minWidth="1200px" placeholder="Cliquez et tapez le code APE retenu" leafsOnly="true" maxUsages="1">

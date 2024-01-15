@@ -50,12 +50,12 @@ first_view = etree.SubElement(root, "View", style="box-shadow: 2px 2px 5px #999;
 header_element = etree.SubElement(first_view, "Header", value="Déclaration")
 
 
-text_element = etree.SubElement(first_view, "Text", name="text", value="Libellé d'activité : $activ_pr_lib", highlightColor="#ff0000")
-text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de liasse : $liasse_type", highlightColor="#ff9900")
-text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité : $activ_nat_et", highlightColor="#0000ff")
-text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface : $activ_surf_et", highlightColor="#ffcc00")
-text_element = etree.SubElement(first_view, "Text", name="evt", value="Type d'évènement : $evenement_type", highlightColor="#00ff00")
-text_element = etree.SubElement(first_view, "Text", name="help_link", value="Aide à la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
+text_element = etree.SubElement(first_view, "Text", name="text", value="Libellé d'activité --> $activ_pr_lib", highlightColor="#ff0000")
+text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de liasse --> $liasse_type", highlightColor="#ff9900")
+text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité --> $activ_nat_et", highlightColor="#0000ff")
+text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface --> $activ_surf_et", highlightColor="#ffcc00")
+text_element = etree.SubElement(first_view, "Text", name="evt", value="Type d'évènement --> $evenement_type", highlightColor="#00ff00")
+# text_element = etree.SubElement(first_view, "Text", name="help_link", value="Aide à la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
 
 
 # Create the help View element
