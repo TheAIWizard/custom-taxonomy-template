@@ -1,0 +1,8 @@
+Le but du jeu est d'attribuer le code APE correspondant à partir du libellé d'activité, et éventuellement selon les cas, des variables annexes.
+
+Si vous avez des difficultés, passez en cliquant sur "Skip".
+Un champ est disponible pour un bref commentaire en cas de besoin.
+
+L'objectif est d'en expertiser un maximum.
+
+Amusez vous bien ! 
