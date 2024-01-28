@@ -93,7 +93,8 @@ for section, section_df in data_naf.groupby('Section'):
         for sous_classe, sous_classe_label in zip(division_df['Sous-classe'], division_df['Intitulé de la sous-classe']):
             # Limit the string length to 70 characters and add "..." if it exceeds
             # sous_classe_label = (sous_classe_label[:47] + '...') if len(sous_classe_label) > 50 else sous_classe_label
-            sous_classe_choice = etree.SubElement(division_choice, "Choice", value=f"{sous_classe} - {sous_classe_label}", alias=sous_classe)
+            code_ape = sous_classe.replace('.', '')
+            sous_classe_choice = etree.SubElement(division_choice, "Choice", value=f"{sous_classe} // {code_ape} - {sous_classe_label}", alias=sous_classe)
             # Add style to each View element within the taxonomy
             #sous_classe_choice.set("style", "box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;")
 
