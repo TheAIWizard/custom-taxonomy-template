@@ -50,7 +50,8 @@ first_view = etree.SubElement(root, "View", style="box-shadow: 2px 2px 5px #999;
 header_element = etree.SubElement(first_view, "Header", value="Déclaration")
 
 
-text_element = etree.SubElement(first_view, "Text", name="text", value="Libellé d'activité --> $activ_pr_lib_et", highlightColor="#ff0000")
+text_element = etree.SubElement(first_view, "Text", name="text", value="Libellé d'activité de l'établissement --> $activ_pr_lib_et", highlightColor="#ff0000")
+text_element = etree.SubElement(first_view, "Text", name="text_comp", value="Libellé d'activité de l'entreprise --> $activ_pr_lib", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de liasse --> $liasse_type", highlightColor="#ff9900")
 text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité --> $activ_nat_et_intitule", highlightColor="#0000ff")
 text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface --> $activ_surf_et", highlightColor="#ffcc00")
@@ -72,6 +73,7 @@ second_view = etree.SubElement(root, "View")#, style="box-shadow: 2px 2px 5px #9
 #header_second_element = etree.SubElement(second_view, "Header", value="Code APE correspondant")
 taxonomy_element = etree.SubElement(second_view, "Taxonomy", name="taxonomy", toName="text", minWidth="1200px", placeholder="Cliquez et tapez le code APE retenu", leafsOnly="true", maxUsages="1")
 
+section_choice = etree.SubElement(taxonomy_element, "Choice", value="Inclassable", alias="XXXXX")
 # Iterate over each branch and write to XML
 for section, section_df in data_naf.groupby('Section'):
     section_label = section_df['Libellé des sections'].iloc[0]  # Assuming the label is the same for all rows in the section
