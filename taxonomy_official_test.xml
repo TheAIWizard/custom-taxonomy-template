@@ -1,8 +1,7 @@
 <View>
   <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px;">
     <Header value="D&#233;claration"/>
-    <Text name="text" value="Libell&#233; d'activit&#233; de l'&#233;tablissement --&gt; $activ_pr_lib_et" highlightColor="#ff0000"/>
-    <Text name="text_comp" value="Libell&#233; d'activit&#233; de l'entreprise --&gt; $activ_pr_lib" highlightColor="#ff0000"/>
+    <Text name="text" value="Libell&#233; d'activit&#233; --&gt; $activ_pr_lib_et" highlightColor="#ff0000"/>
     <Text name="c05" value="Type de liasse --&gt; $liasse_type" highlightColor="#ff9900"/>
     <Text name="nat" value="Nature d'activit&#233; --&gt; $activ_nat_et_intitule" highlightColor="#0000ff"/>
     <Text name="surf" value="Surface --&gt; $activ_surf_et" highlightColor="#ffcc00"/>
@@ -10,7 +9,6 @@
   </View>
   <View>
     <Taxonomy name="taxonomy" toName="text" minWidth="1200px" placeholder="Cliquez et tapez le code APE retenu" leafsOnly="true" maxUsages="1">
-      <Choice value="Inclassable" alias="XXXXX"/>
       <Choice value="A - AGRICULTURE, SYLVICULTURE ET P&#202;CHE" alias="A">
         <Choice value="01 - Culture et production animale, chasse et services annexes" alias="01">
           <Choice value="01.11Z // 0111Z - Culture de c&#233;r&#233;ales (&#224; l'exception du riz), de l&#233;gumineuses et de graines ol&#233;agineuses" alias="01.11Z"/>
