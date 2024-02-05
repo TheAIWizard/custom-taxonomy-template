@@ -7,6 +7,7 @@
     <Text name="nat" value="Nature d'activit&#233; --&gt; $activ_nat_et_intitule" highlightColor="#0000ff"/>
     <Text name="surf" value="Surface --&gt; $activ_surf_et" highlightColor="#ffcc00"/>
     <Text name="evt" value="Type d'&#233;v&#232;nement --&gt; $evenement_type" highlightColor="#00ff00"/>
+    <Text name="cj" value="Cat&#233;gorie juridique --&gt; $cj" highlightColor="#00ff00"/>
   </View>
   <View>
     <Taxonomy name="taxonomy" toName="text" minWidth="1200px" placeholder="Cliquez et tapez le code APE retenu" leafsOnly="true" maxUsages="1">
