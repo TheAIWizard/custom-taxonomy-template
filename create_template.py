@@ -56,7 +56,7 @@ text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de l
 text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité --> $activ_nat_et_intitule", highlightColor="#0000ff")
 text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface --> $activ_surf_et", highlightColor="#ffcc00")
 text_element = etree.SubElement(first_view, "Text", name="evt", value="Type d'évènement --> $evenement_type", highlightColor="#00ff00")
-text_element = etree.SubElement(first_view, "Text", name="cj", value="Catégorie juridique --> $cj", highlightColor="#00ff00")
+text_element = etree.SubElement(first_view, "Text", name="cj", value="Catégorie juridique --> $cj_intitule", highlightColor="#00ff00")
 # text_element = etree.SubElement(first_view, "Text", name="help_link", value="Aide à la codification APE: https://sydore.insee.fr/xwiki/bin/view/APE/Codification-APE-Libelles")
 
 
