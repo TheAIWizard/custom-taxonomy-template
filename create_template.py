@@ -52,7 +52,7 @@ header_element = etree.SubElement(first_view, "Header", value="Déclaration")
 
 text_element = etree.SubElement(first_view, "Text", name="act_imp", value="Activité la plus importante dans l'établissement --> $activ_pr_lib_et", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="act_exec", value="Activité exercée dans l'établissement --> $activ_ex_lib_et", highlightColor="#ff0000")
-text_element = etree.SubElement(first_view, "Text", name="act_ent", value="Activités de l'entreprise --> $activ_pr_lib", highlightColor="#ff0000")
+text_element = etree.SubElement(first_view, "Text", name="act_ent", value="Activité(s) de l'entreprise --> $activ_pr_lib", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de liasse --> $liasse_type", highlightColor="#ff9900")
 text_element = etree.SubElement(first_view, "Text", name="nat", value="Nature d'activité --> $activ_nat_et_intitule", highlightColor="#0000ff")
 text_element = etree.SubElement(first_view, "Text", name="surf", value="Surface --> $activ_surf_et", highlightColor="#ffcc00")
