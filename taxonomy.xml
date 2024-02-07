@@ -3,6 +3,7 @@
     <Header value="D&#233;claration"/>
     <Text name="act_imp" value="Activit&#233; la plus importante dans l'&#233;tablissement --&gt; $activ_pr_lib_et" highlightColor="#ff0000"/>
     <Text name="act_exec" value="Activit&#233; exerc&#233;e dans l'&#233;tablissement --&gt; $activ_ex_lib_et" highlightColor="#ff0000"/>
+    <Text name="act_ent" value="Activit&#233;s de l'entreprise --&gt; $activ_pr_lib" highlightColor="#ff0000"/>
     <Text name="c05" value="Type de liasse --&gt; $liasse_type" highlightColor="#ff9900"/>
     <Text name="nat" value="Nature d'activit&#233; --&gt; $activ_nat_et_intitule" highlightColor="#0000ff"/>
     <Text name="surf" value="Surface --&gt; $activ_surf_et" highlightColor="#ffcc00"/>
