@@ -50,7 +50,7 @@ first_view = etree.SubElement(root, "View", style="box-shadow: 2px 2px 5px #999;
 header_element = etree.SubElement(first_view, "Header", value="Déclaration")
 
 
-text_element = etree.SubElement(first_view, "Text", name="act_imp", value="Activité la plus importante dans l'établissement --> $activ_pr_lib_et", highlightColor="#ff0000")
+text_element = etree.SubElement(first_view, "Text", name="text", value="Activité la plus importante dans l'établissement --> $activ_pr_lib_et", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="act_exec", value="Activité exercée dans l'établissement --> $activ_ex_lib_et", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="act_ent", value="Activité(s) de l'entreprise --> $activ_pr_lib", highlightColor="#ff0000")
 text_element = etree.SubElement(first_view, "Text", name="c05", value="Type de liasse --> $liasse_type", highlightColor="#ff9900")
