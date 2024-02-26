@@ -1,0 +1,4 @@
+*.xls
+*.json
+*.parquet
+*.gzip
